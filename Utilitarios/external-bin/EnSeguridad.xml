@@ -1,0 +1,136 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EnSeguridad
+</name>
+</assembly>
+<members>
+<member name="M:Mincetur.Administracion.Seguridad.EnSeguridad.enExtDimPersona.#ctor">
+	<summary>
+ Empty constructor required for serialization.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
+</summary>
+</member><member name="T:Mincetur.Administracion.Seguridad.EnSeguridad.My.Resources.Resources">
+	<summary>
+  Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Id_Persona">
+	<summary>
+ Gets or sets the Id_Persona of the enPersona.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Ruc">
+	<summary>
+ Gets or sets the Ruc of the enPersona.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Tipo_Persona">
+	<summary>
+ Gets or sets the Tipo_Persona of the enPersona.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Flg_No_Domiciliado">
+	<summary>
+ Gets or sets the Flg_No_Domiciliado of the enPersona.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Id_Pais">
+	<summary>
+ Gets or sets the Id_Pais of the enPersona.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Nombres">
+	<summary>
+ Gets or sets the Nombres of the enPerNatural.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Ape_Pater">
+	<summary>
+ Gets or sets the Ape_Pater of the enPerNatural.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Ape_Mater">
+	<summary>
+ Gets or sets the Ape_Mater of the enPerNatural.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Nom_Persona">
+	<summary>
+ Gets or sets the Nom_Persona of the enPerNatural.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Id_Genero">
+	<summary>
+ Gets or sets the Id_Docu of the enPerNatural.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Id_Docu">
+	<summary>
+ Gets or sets the Id_Docu of the enPerDocumento.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Num_Docu">
+	<summary>
+ Gets or sets the Num_Docu of the enPerDocumento.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Des_Docu">
+	<summary>
+ Gets or sets the Des_Docu of the enPerDocumento.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Abr_Docu">
+	<summary>
+ Gets or sets the Abr_Docu of the enPerDocumento.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Id_Domi">
+	<summary>
+ Gets or sets the Id_Domi of the enPerDomicilio.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Id_Via">
+	<summary>
+ Gets or sets the Id_Via of the enPerDomicilio.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Des_Via">
+	<summary>
+ Gets or sets the Des_Via of the enPerDomicilio.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Numero">
+	<summary>
+ Gets or sets the Numero of the enPerDomicilio.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Interior">
+	<summary>
+ Gets or sets the Interior of the enPerDomicilio.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Id_Zona">
+	<summary>
+ Gets or sets the Id_Zona of the enPerDomicilio.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Des_Zona">
+	<summary>
+ Gets or sets the Des_Zona of the enPerDomicilio.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Obs_Domicilio">
+	<summary>
+ Gets or sets the Obs_Domicilio of the enPerDomicilio.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Id_Ubigeo">
+	<summary>
+ Gets or sets the Id_Ubigeo of the enPerDomicilio.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Cod_Ubigeo">
+	<summary>
+ Gets or sets the Cod_Ubigeo of the enPerDomicilio.
+ </summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.Fec_Nacimiento">
+	<summary>
+ Gets or sets the Fec_Nacimiento of the enPerCaract.
+ </summary>
+</member><member name="M:Mincetur.Administracion.Seguridad.EnSeguridad.enPersona.#ctor">
+	<summary>
+ Empty constructor required for serialization.
+ </summary>
+</member><member name="M:Mincetur.Administracion.Seguridad.EnSeguridad.enDesplazamiento.#ctor">
+	<summary>
+ Empty constructor required for serialization.
+ </summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="Mincetur.Administracion.AplBorradorElectronico.ServicioIntegracionBorradorElect" elementFormDefault="qualified" targetNamespace="Mincetur.Administracion.AplBorradorElectronico.ServicioIntegracionBorradorElect" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="FormatoMovi">
+    <xs:sequence>
+      <xs:element name="IdDoc" type="xs:int" />
+      <xs:element minOccurs="0" name="IdMoviAnt" type="xs:int" />
+      <xs:element minOccurs="0" name="EstorgRemite" nillable="true" type="tns:Estorg" />
+      <xs:element name="lstMovi" nillable="true" type="tns:ArrayOfMovi" />
+      <xs:element minOccurs="0" name="IdResponsable" type="xs:int" />
+      <xs:element minOccurs="0" name="IdUsu" type="xs:int" />
+      <xs:element minOccurs="0" name="IdSis" type="xs:int" />
+      <xs:element minOccurs="0" name="Ip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Opr" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FormatoMovi" nillable="true" type="tns:FormatoMovi" />
+  <xs:complexType name="Estorg">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdSub" type="xs:int" />
+      <xs:element minOccurs="0" name="IdSubofi" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Estorg" nillable="true" type="tns:Estorg" />
+  <xs:complexType name="ArrayOfMovi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Movi" nillable="true" type="tns:Movi" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMovi" nillable="true" type="tns:ArrayOfMovi" />
+  <xs:complexType name="Movi">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdAccion" type="xs:int" />
+      <xs:element minOccurs="0" name="IdMovi" type="xs:int" />
+      <xs:element minOccurs="0" name="IdAsigna" type="xs:int" />
+      <xs:element minOccurs="0" name="Estorg" nillable="true" type="tns:Estorg" />
+      <xs:element minOccurs="0" name="IdUsuFunc" type="xs:int" />
+      <xs:element minOccurs="0" name="DesObs" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlgOfiFun" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Movi" nillable="true" type="tns:Movi" />
+  <xs:complexType name="Resultado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdTipo" type="xs:int" />
+      <xs:element minOccurs="0" name="IdError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor2" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Resultado" nillable="true" type="tns:Resultado" />
+</xs:schema>

@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Areas/Publico/Views/Shared/_LayoutVentanilla.cshtml";   
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Consulta Pública de expediente</title>
+</head>
+<body>
+    <style type="text/css">
+        th
+        {
+            background: #DAECF7;
+            vertical-align: top;
+            border-collapse: collapse;
+            padding: 0.3em;
+            caption-side: bottom;
+        }
+        
+        .control-label
+        {
+            text-align: inherit !important;
+            padding: 16px;
+        }
+    </style>
+    <div id="Modal_ConsultaExpe" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="form-horizontal form-label-left">
+                    <div class="inline-container-Group">
+                        <div>
+                            <div style="width: 100%">
+                                <div class="alert alert-danger">
+                                    <center>
+                                        <strong>Acceso no autorizado</strong></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

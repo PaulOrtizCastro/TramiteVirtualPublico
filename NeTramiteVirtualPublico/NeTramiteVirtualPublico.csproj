@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D53254F0-1DB8-443F-93FF-80DBCB319F3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mincetur.Administracion.AplTramiteVirtualPublico.NeTramiteVirtualPublico</RootNamespace>
+    <AssemblyName>NeTramiteVirtualPublico</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CoTramiteDocumentario">
+      <HintPath>..\packages\external-ddl\CoTramiteDocumentario.dll</HintPath>
+    </Reference>
+    <Reference Include="EnGeneralesUtil">
+      <HintPath>..\packages\external-ddl\EnGeneralesUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="EnSeguridad">
+      <HintPath>..\packages\external-ddl\EnSeguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="EnTramiteDocumentario">
+      <HintPath>..\packages\external-ddl\EnTramiteDocumentario.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="neAnexos.cs" />
+    <Compile Include="neArchAdjuntoMemo.cs" />
+    <Compile Include="neArchExpeRequi.cs" />
+    <Compile Include="neAsignar.cs" />
+    <Compile Include="neBase.cs" />
+    <Compile Include="neBorrador.cs" />
+    <Compile Include="neComent.cs" />
+    <Compile Include="neDerivar.cs" />
+    <Compile Include="neDoc.cs" />
+    <Compile Include="neDocLf.cs" />
+    <Compile Include="neEncryptDecrypt.cs" />
+    <Compile Include="neExpe.cs" />
+    <Compile Include="neMemoGenerado.cs" />
+    <Compile Include="neMovi.cs" />
+    <Compile Include="nePersona.cs" />
+    <Compile Include="neResponsable.cs" />
+    <Compile Include="neTrazabilidad.cs" />
+    <Compile Include="neTupa.cs" />
+    <Compile Include="neTupaConcepto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoTramiteVirtualPublico\CoTramiteVirtualPublico.csproj">
+      <Project>{6F5F0F32-9EE4-4C69-BB95-A56A06CA6B55}</Project>
+      <Name>CoTramiteVirtualPublico</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DaTramiteVirtualPublico\DaTramiteVirtualPublico.csproj">
+      <Project>{2054B972-B83D-4C68-BD1E-9E1CD19228AF}</Project>
+      <Name>DaTramiteVirtualPublico</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EnTramiteVirtualPublico\EnTramiteVirtualPublico.csproj">
+      <Project>{FF5198E2-84FA-401C-A5E6-5B6B0CF63887}</Project>
+      <Name>EnTramiteVirtualPublico</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

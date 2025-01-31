@@ -1,0 +1,50 @@
+﻿@using System.Configuration;
+@using System.Web.Optimization;
+@{
+    Layout = "~/Areas/Publico/Views/Shared/_LayoutVentanilla.cshtml";
+    ViewBag.Title = "";
+    ViewBag.TraerRutaAplicacion = "http://" + Request.Url.Host + ":" + Request.Url.Port + Request.ApplicationPath + "/";   
+    
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Consulta Publica de expedientes</title>
+    <script type="text/javascript">
+        var strRutaServidorMaster = '@String.Format("{0}://{1}:{2}", Request.Url.Scheme, Request.Url.Host, Request.Url.Port)';
+        var strRutaAplicacionMaster = strRutaServidorMaster + '@HttpContext.Current.Request.ApplicationPath' + "/";
+        var strRutaImagenesMaster = '@ConfigurationManager.AppSettings["IMAGENES_SERV"]';
+        var idExpeVirtual = "@ViewBag.idExpe";
+        var idPersona =  "@ViewBag.idPersona";
+        var idMovi =  "@ViewBag.idMovi";  
+        var idDoc =  "@ViewBag.intIdDoc"; 
+        var po = '@HttpContext.Current.Request.QueryString["po"]';          
+        var strPaginaDefaultMasterPublico = "Publico/Ventanilla/ConsultaExpeGrilla?idPersona=" + idPersona + "&idMovi=" + idMovi + "&idExpe=" + idExpeVirtual;
+
+        $(document).ready(function () {
+            //console.log("strPaginaDefaultMasterPublico: ", strPaginaDefaultMasterPublico);
+            if (noEsVacio(po)) {
+                cargarContenidoEnDiv("divContenidoMaster", strRutaAplicacionMaster + po + "?intIdDoc=" + idDoc);
+            } else {
+                cargarContenidoEnDiv("divContenidoMaster", strRutaAplicacionMaster + strPaginaDefaultMasterPublico);
+            }            
+        });
+    </script>
+    <style type="text/css">
+        .body
+        {
+            background-color: #cccccc !important;
+        }
+    </style>
+</head>
+<body class="body">
+    <div>
+        <div id="divContenidoMaster" class="contenido">
+        </div>
+    </div>
+    <div style="display: none">
+        <input type="hidden" id="hfIdStrTipo_Index" value= "@ViewBag.strTipo"/>
+    </div>
+</body>
+</html>

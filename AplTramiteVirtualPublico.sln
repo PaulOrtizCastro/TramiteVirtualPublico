@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mincetur.SG.OI.Publico", "Mincetur.SG.OI.Publico\Mincetur.SG.OI.Publico.csproj", "{D5575632-635B-425D-A04B-705D043F1A88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Común", "1. Común", "{0CC30134-B685-4916-936C-70C84B7C6D56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Entidades", "2. Entidades", "{119EC85F-5227-4B1F-9E39-29DB45906A9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Datos", "3. Datos", "{83976559-61A4-446D-902A-A7D18FF04FD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Lógica de Negocio", "4. Lógica de Negocio", "{8FCDD2CF-FAE0-4F2C-ABB7-F6809561CBEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Presentación", "5. Presentación", "{A6329A4B-425C-4724-B24F-19ADE2F62B04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Utilitarios", "6. Utilitarios", "{CDEEEF0D-AFDC-4F09-B081-D3E9551E6374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilitarios", "Utilitarios\Utilitarios.csproj", "{1E67A570-8F48-4F2F-B4CE-B3D1FF018536}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnTramiteVirtualPublico", "EnTramiteVirtualPublico\EnTramiteVirtualPublico.csproj", "{FF5198E2-84FA-401C-A5E6-5B6B0CF63887}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaTramiteVirtualPublico", "DaTramiteVirtualPublico\DaTramiteVirtualPublico.csproj", "{2054B972-B83D-4C68-BD1E-9E1CD19228AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeTramiteVirtualPublico", "NeTramiteVirtualPublico\NeTramiteVirtualPublico.csproj", "{D53254F0-1DB8-443F-93FF-80DBCB319F3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoTramiteVirtualPublico", "CoTramiteVirtualPublico\CoTramiteVirtualPublico.csproj", "{6F5F0F32-9EE4-4C69-BB95-A56A06CA6B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebGestionDoc", "WebGestionDoc\WebGestionDoc.csproj", "{C2A24D0C-622B-4514-A482-FC3A4C1C63F7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://srvsourcesafe:8080/tfs/aplicaciones
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CoTramiteVirtualPublico\\CoTramiteVirtualPublico.csproj
+		SccProjectTopLevelParentUniqueName1 = AplTramiteVirtualPublico.sln
+		SccProjectName1 = CoTramiteVirtualPublico
+		SccLocalPath1 = CoTramiteVirtualPublico
+		SccProjectUniqueName2 = DaTramiteVirtualPublico\\DaTramiteVirtualPublico.csproj
+		SccProjectTopLevelParentUniqueName2 = AplTramiteVirtualPublico.sln
+		SccProjectName2 = DaTramiteVirtualPublico
+		SccLocalPath2 = DaTramiteVirtualPublico
+		SccProjectUniqueName3 = EnTramiteVirtualPublico\\EnTramiteVirtualPublico.csproj
+		SccProjectTopLevelParentUniqueName3 = AplTramiteVirtualPublico.sln
+		SccProjectName3 = EnTramiteVirtualPublico
+		SccLocalPath3 = EnTramiteVirtualPublico
+		SccProjectUniqueName4 = Mincetur.SG.OI.Publico\\Mincetur.SG.OI.Publico.csproj
+		SccProjectTopLevelParentUniqueName4 = AplTramiteVirtualPublico.sln
+		SccProjectName4 = Mincetur.SG.OI.Publico
+		SccLocalPath4 = Mincetur.SG.OI.Publico
+		SccProjectUniqueName5 = NeTramiteVirtualPublico\\NeTramiteVirtualPublico.csproj
+		SccProjectTopLevelParentUniqueName5 = AplTramiteVirtualPublico.sln
+		SccProjectName5 = NeTramiteVirtualPublico
+		SccLocalPath5 = NeTramiteVirtualPublico
+		SccProjectUniqueName6 = Utilitarios\\Utilitarios.csproj
+		SccProjectTopLevelParentUniqueName6 = AplTramiteVirtualPublico.sln
+		SccProjectName6 = Utilitarios
+		SccLocalPath6 = Utilitarios
+		SccProjectUniqueName7 = WebGestionDoc\\WebGestionDoc.csproj
+		SccProjectTopLevelParentUniqueName7 = AplTramiteVirtualPublico.sln
+		SccProjectName7 = WebGestionDoc
+		SccLocalPath7 = WebGestionDoc
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5575632-635B-425D-A04B-705D043F1A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5575632-635B-425D-A04B-705D043F1A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5575632-635B-425D-A04B-705D043F1A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5575632-635B-425D-A04B-705D043F1A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E67A570-8F48-4F2F-B4CE-B3D1FF018536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E67A570-8F48-4F2F-B4CE-B3D1FF018536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E67A570-8F48-4F2F-B4CE-B3D1FF018536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E67A570-8F48-4F2F-B4CE-B3D1FF018536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF5198E2-84FA-401C-A5E6-5B6B0CF63887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF5198E2-84FA-401C-A5E6-5B6B0CF63887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF5198E2-84FA-401C-A5E6-5B6B0CF63887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF5198E2-84FA-401C-A5E6-5B6B0CF63887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2054B972-B83D-4C68-BD1E-9E1CD19228AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2054B972-B83D-4C68-BD1E-9E1CD19228AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2054B972-B83D-4C68-BD1E-9E1CD19228AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2054B972-B83D-4C68-BD1E-9E1CD19228AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53254F0-1DB8-443F-93FF-80DBCB319F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53254F0-1DB8-443F-93FF-80DBCB319F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53254F0-1DB8-443F-93FF-80DBCB319F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53254F0-1DB8-443F-93FF-80DBCB319F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F5F0F32-9EE4-4C69-BB95-A56A06CA6B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F5F0F32-9EE4-4C69-BB95-A56A06CA6B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F5F0F32-9EE4-4C69-BB95-A56A06CA6B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F5F0F32-9EE4-4C69-BB95-A56A06CA6B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A24D0C-622B-4514-A482-FC3A4C1C63F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A24D0C-622B-4514-A482-FC3A4C1C63F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A24D0C-622B-4514-A482-FC3A4C1C63F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A24D0C-622B-4514-A482-FC3A4C1C63F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D5575632-635B-425D-A04B-705D043F1A88} = {A6329A4B-425C-4724-B24F-19ADE2F62B04}
+		{C2A24D0C-622B-4514-A482-FC3A4C1C63F7} = {A6329A4B-425C-4724-B24F-19ADE2F62B04}
+		{6F5F0F32-9EE4-4C69-BB95-A56A06CA6B55} = {0CC30134-B685-4916-936C-70C84B7C6D56}
+		{FF5198E2-84FA-401C-A5E6-5B6B0CF63887} = {119EC85F-5227-4B1F-9E39-29DB45906A9D}
+		{2054B972-B83D-4C68-BD1E-9E1CD19228AF} = {83976559-61A4-446D-902A-A7D18FF04FD3}
+		{D53254F0-1DB8-443F-93FF-80DBCB319F3A} = {8FCDD2CF-FAE0-4F2C-ABB7-F6809561CBEC}
+		{1E67A570-8F48-4F2F-B4CE-B3D1FF018536} = {CDEEEF0D-AFDC-4F09-B081-D3E9551E6374}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,407 @@
+[
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 1,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 2,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 3,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 4,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 5,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 6,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 7,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 8,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 9,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 13,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "2",
+    "ID_ACCION": 1,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "2",
+    "ID_ACCION": 2,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "2",
+    "ID_ACCION": 3,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "2",
+    "ID_ACCION": 4,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "2",
+    "ID_ACCION": 5,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "2",
+    "ID_ACCION": 6,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "2",
+    "ID_ACCION": 7,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "2",
+    "ID_ACCION": 8,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "2",
+    "ID_ACCION": 9,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "4",
+    "ID_ACCION": 3,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 1,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 2,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 3,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 4,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 5,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 6,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 7,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 8,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 9,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 13,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 1,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 2,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 3,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 4,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 5,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 6,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 7,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 8,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 9,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "18",
+    "ID_ACCION": 1,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "18",
+    "ID_ACCION": 2,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "18",
+    "ID_ACCION": 3,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "18",
+    "ID_ACCION": 4,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "18",
+    "ID_ACCION": 5,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "18",
+    "ID_ACCION": 6,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "18",
+    "ID_ACCION": 7,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "18",
+    "ID_ACCION": 8,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "18",
+    "ID_ACCION": 9,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 1,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 2,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 3,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 4,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 5,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 6,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 7,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 8,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 9,
+    "COD_TIPO": "2"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 11,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "1",
+    "ID_ACCION": 12,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "2",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "3",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "4",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "5",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "6",
+    "ID_ACCION": 11,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "7",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "8",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 11,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "9",
+    "ID_ACCION": 12,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "10",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "12",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "13",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "16",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "17",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "18",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "18",
+    "ID_ACCION": 11,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 10,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 11,
+    "COD_TIPO": "3"
+  },
+  {
+    "ID_ROL": "19",
+    "ID_ACCION": 13,
+    "COD_TIPO": "2"
+  }
+]

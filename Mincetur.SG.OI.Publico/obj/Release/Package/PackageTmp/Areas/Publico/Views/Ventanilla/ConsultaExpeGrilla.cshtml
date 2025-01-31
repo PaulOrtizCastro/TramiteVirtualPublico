@@ -1,0 +1,161 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Consulta Publica de expedientes</title>
+</head>
+@Scripts.Render("~/bundles/Reporte/consExpeGrilla")
+<body>
+    <style type="text/css">
+        th {
+            background: #DAECF7;
+            vertical-align: top;
+            border-collapse: collapse;
+            padding: 0.3em;
+            caption-side: bottom;
+        }
+
+        .control-label {
+            text-align: inherit !important;
+            padding: 16px;
+        }
+    </style>
+    <div id="Modal_ConsultaExpe" role="dialog">
+        <div class="modal-dialog modal-lg" style="width:70%">
+            <div class="modal-content">
+                <div class="modal-header" style="cursor: pointer;">
+                    <h4 class="modal-title">
+                        <i class="fa fa-pencil"></i>Datos Generales del Expediente N°
+                        <label id="lblCabeceraExpe" />
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form id='@("FrmModalConsultaExpeGrilla")' class="form-horizontal form-label-left">
+                        <div class="inline-container-Group">
+                            <div class="form-group">
+                                <div class="col-sm-2">
+                                    <label style="font-family: Trebuchet MS; color: DodgerBlue" class="control-label">
+                                        Administrado
+                                    </label>
+                                </div>
+                                <div class="col-sm-10">
+                                    <label id="lblCabeceraPersonaNaturalJuridica" class="form-control" style="height: 100%" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-2">
+                                    <label style="font-family: Trebuchet MS; color: DodgerBlue" class="control-label">
+                                        Fec. Registro
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label id="lblCabeceraFec" class="form-control" style="height: 100%">
+                                    </label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <label style="font-family: Trebuchet MS; color: DodgerBlue" class="control-label">
+                                        Clasificación
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label id="lblCabeceraClasificacion" class="form-control" style="height: 100%" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-2">
+                                    <label style="font-family: Trebuchet MS; color: DodgerBlue" class="control-label">
+                                        Tipo doc.
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label id="lblCabeceraTipDoc" class="form-control" style="height: 100%">
+                                    </label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <label style="font-family: Trebuchet MS; color: DodgerBlue" class="control-label">
+                                        N°. Documento
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label id="lblCabeceraNumDoc" class="form-control" style="height: 100%">
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="divTupaVentanilla" class="form-group">
+                                <div class="col-sm-2">
+                                    <label style="font-family: Trebuchet MS; color: DodgerBlue; float: left" class="control-label">
+                                        Desc. Tupa
+                                    </label>
+                                </div>
+                                <div class="col-sm-10">
+                                    <label id="lblCabeceraTupa" class="form-control" style="height: 100%" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-2">
+                                    <label style="font-family: Trebuchet MS; color: DodgerBlue" class="control-label">
+                                        Asunto
+                                    </label>
+                                </div>
+                                <div class="col-sm-10">
+                                    <label id="taCabeceraAsunto" class="form-control" style="height: 100%" />
+                                </div>
+                            </div>
+                            <div id="divAnexo" class="form-group">
+                                <div class="col-sm-2">
+                                    <label id="lblAnexoVentanilla" style="font-family: Trebuchet MS; color: DodgerBlue;"
+                                           class="control-label">
+                                    </label>
+                                </div>
+                                <div class="col-sm-10">
+                                    <label id="tdAnexosRegExpe" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label id="lblLeyendaVentanilla" style="float: left; text-align: left; font-size: 10px;
+                                color: green; padding: 15px; display: none">
+                                    <b>* Leyenda:</b>
+                                    <br>
+                                    <img src="../Resource/img/attachment.png" title="Expediente anexado" />
+                                    : Expediente anexado
+                                </label>
+                            </div>
+                        </div>
+                        <div class="inline-container-Group">
+                            <div class="x_title">
+                                <h3 class="panel-title">
+                                    Situación del expediente
+                                </h3>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div id="divConsuHistoricoVentanilla">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="divRegistroConsultaPublicoDocumentos" style="width: 100%; height: 100%">
+    </div>
+    <div style="display: none">
+        <input type="hidden" id="hfidFecVisto" value="@ViewBag.FecVisto" />
+        <input type="hidden" id="hfCodForm" value="@ViewBag.codForm" />
+        <input type="hidden" id="hfCodRol" value="@ViewBag.codRol" />
+        <input type="hidden" id="hfCodMovi" value="@ViewBag.codMovi" />
+        <input type="hidden" id="hfIdSubPivot" value="@ViewBag.idSubPivot" />
+
+        <input type="hidden" id="hfIdPersona_consultaExpeGrilla" value="@ViewBag.idPersona" />
+        <input type="hidden" id="hfIdResponsable_consultaExpeGrilla" value="@ViewBag.strResponsable" />
+        <input type="hidden" id="hfIdExpe_consultaExpeGrilla" value="@ViewBag.idExpe" />
+    </div>
+</body>
+</html>

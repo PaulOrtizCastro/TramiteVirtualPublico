@@ -1,0 +1,142 @@
+﻿@Scripts.Render("~/bundles/Reporte/ConsultaTupaRequi")
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #tblVisorRequi tr:nth-child(even)
+        {
+            background-color: #dddddd;
+        }
+        #tblVisorRequi tr
+        {
+            cursor: pointer;
+        }
+        .Cabecera
+        {
+            background-color: #679F87;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="inline-container-Group">
+        <div class="x_title">
+            <h3 class="panel-title Cabecera">
+                Concepto</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    @ViewBag.DES_TUPA_CONCEPTO
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                <label>
+                    Clasificación
+                </label>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    @ViewBag.DES_SILENCIO
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label>
+                    Plazo para resolver (en días hábiles)
+                </label>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    @ViewBag.NUM_DIAS
+                </div>
+            </div>
+        </div>
+        <hr />
+        @*<div class="x_title">
+            <h3 class="panel-title">
+                Derecho de tramitación</h3>
+        </div>*@
+        <div class="row">
+            <div class="col-md-6">
+                <label>
+                    Derecho de tramitación (UIT)
+                </label>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    @ViewBag.NUM_UIT %
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                <label>
+                    Inicio del procedimiento
+                </label>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    Oficina de Trámite Documentario y Archivo-OTDA
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label>
+                    Autoridad competente para resolver
+                </label>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    @ViewBag.DES_UNI_RESOLVER
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="x_title">
+            <h3 class="panel-title Cabecera">
+                Instancias de resolución de recursos</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="divConsTupaResolRecursos">
+                </div>
+            </div>
+            @*<div class="col-md-6">
+                <div>
+                    --
+                </div>
+            </div>*@
+        </div>
+        <hr />
+        <div class="x_title">
+            <h3 class="panel-title Cabecera">
+                Requisitos</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div id="divConsTupaRequiPub">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div id="divLeyendaTupa">
+    </div>
+    <div id="divCondicionesTupa">
+    </div>
+    <div style="display: none">
+        <input type="hidden" id="idVisorTupaConcepto" value= @ViewBag.ID_TUPA_CONCEPTO />
+        <input type="hidden" id="idVisorTupa" value= @ViewBag.ID_TUPA />
+        <input type="hidden" id="idVisorCodTupa" value= @ViewBag.COD_TUPA />
+    </div>
+</body>
+</html>

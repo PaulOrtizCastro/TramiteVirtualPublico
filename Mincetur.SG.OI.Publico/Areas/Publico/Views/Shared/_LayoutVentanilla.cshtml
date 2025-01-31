@@ -1,0 +1,37 @@
+﻿@using System.Configuration;
+@using System.Web.Optimization;
+@{
+    ViewBag.Title = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8; IE=9; IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" rel="icon" href="../../../../Resource/img/copyright.png" />
+    <title>Consulta Publica de expedientes</title>
+    @Styles.Render("~/assets/themes")
+    @Styles.Render("~/assets/themesBootStrap")
+    @Styles.Render("~/assets/themesJquery")
+</head>
+<body>
+    @Scripts.Render("~/bundles/DefaultJquery")
+    @Scripts.Render("~/bundles/JqGrid")
+    @Scripts.Render("~/bundles/bootstrap")
+    @*@Scripts.Render("~/bundles/Reporte/system.conf")  *@
+    <script type="text/javascript">
+        var strTimerMaster = "";
+        var strRutaServidorMaster = '@String.Format("{0}://{1}:{2}", Request.Url.Scheme, Request.Url.Host, Request.Url.Port)';
+        var strRutaAplicacionMaster = strRutaServidorMaster + '@HttpContext.Current.Request.ApplicationPath' + "/";
+        var strRutaImagenesMaster = '@ConfigurationManager.AppSettings["IMAGENES_SERV"]';
+         
+    </script>
+    <div>
+        @RenderBody()
+    </div>
+    <div id="divDialogAjaxStart" class="modalProceso">
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://svc.mincetur.gob.pe:8010/ServicioBorradorDig/Integracion/Services/WCFBorradorElectIntegracionEnviar.svc?xsd=xsd2" namespace="Mincetur.Administracion.AplBorradorElectronico.ServicioIntegracionBorradorElect" />
+  <xs:element name="EnviarCorreoDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="Mincetur.Administracion.AplBorradorElectronico.ServicioIntegracionBorradorElect" minOccurs="0" name="request" nillable="true" type="q1:FormatoMovi" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarCorreoDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="Mincetur.Administracion.AplBorradorElectronico.ServicioIntegracionBorradorElect" minOccurs="0" name="EnviarCorreoDocumentoResult" nillable="true" type="q2:Resultado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

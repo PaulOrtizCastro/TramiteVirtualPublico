@@ -1,0 +1,7 @@
+﻿@{
+    Layout = "~/Areas/Publico/Views/Shared/_LayoutVentanilla.cshtml";
+}
+  
+  @*@Html.Action("regDocumento", "Ventanilla", new { intIdExpe = 0, intIdMovi = 0, intIdDoc = Request.QueryString["intIdDoc"], intIdAnoProc = 0, strIdDiv = "", });*@
+  @Html.Action("regDocumento", "Ventanilla", new { intIdExpe = 0, intIdMovi = 0, intIdDoc = ViewBag.strIdDoc, intIdAnoProc = 0, strIdDiv = "", strCod = ViewBag.strCod });
+            

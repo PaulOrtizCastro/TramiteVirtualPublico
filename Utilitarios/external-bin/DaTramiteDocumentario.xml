@@ -1,0 +1,56 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DaTramiteDocumentario
+</name>
+</assembly>
+<members>
+<member name="P:Mincetur.Administracion.TramiteDocumentario.DaTramiteDocumentario.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:Mincetur.Administracion.TramiteDocumentario.DaTramiteDocumentario.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
+</summary>
+</member><member name="T:Mincetur.Administracion.TramiteDocumentario.DaTramiteDocumentario.My.Resources.Resources">
+	<summary>
+  Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="M:Mincetur.Administracion.TramiteDocumentario.DaTramiteDocumentario.daUDml.BeginTransaction(System.Data.OracleClient.OracleConnection)">
+	<summary>
+ method for beginning a database transaction
+ </summary>
+	<param name="cnn">database connection we're working with</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.TramiteDocumentario.DaTramiteDocumentario.daUDml.CommitTransactions(System.Data.OracleClient.OracleTransaction)">
+	<summary>
+ method for doing a commit on the specified transaction. The transaction in this case
+ is clobal to this class (for demonstrative purposes only). If it fails then we let the
+ user know and why
+ </summary>
+	<param name="trans">the SqlTransaction we're carrying around with us</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.TramiteDocumentario.DaTramiteDocumentario.daUDml.RollbackTransaction(System.Data.OracleClient.OracleTransaction@)">
+	<summary>
+ method for rolling back a transaction because something went wrong
+ this is to help maintain data integrity
+ 
+ </summary>
+	<param name="trans">the transaction we are doing a rollback on</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.TramiteDocumentario.DaTramiteDocumentario.daUDml.ThrowOracleException">
+	<summary>
+ since SqlException has no default constructors and we cannot throw one we
+ use this method to call RAISERROR on the SQL side of things to cause a
+ OracleException
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

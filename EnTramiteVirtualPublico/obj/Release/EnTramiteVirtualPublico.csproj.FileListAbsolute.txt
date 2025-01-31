@@ -1,0 +1,13 @@
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\bin\Release\EnTramiteVirtualPublico.dll
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\bin\Release\EnTramiteVirtualPublico.pdb
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\bin\Release\CoGeneralesUtil.dll
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\bin\Release\CoSeguridad.dll
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\bin\Release\CoTramiteVirtualPublico.dll
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\bin\Release\EnGeneralesUtil.dll
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\bin\Release\EnSeguridad.dll
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\bin\Release\CoTramiteVirtualPublico.pdb
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\obj\Release\EnTramiteVirtualPublico.csproj.AssemblyReference.cache
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\obj\Release\EnTramiteVirtualPublico.csproj.CoreCompileInputs.cache
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\obj\Release\EnTramiteVirtualPublico.csproj.CopyComplete
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\obj\Release\EnTramiteVirtualPublico.dll
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\EnTramiteVirtualPublico\obj\Release\EnTramiteVirtualPublico.pdb

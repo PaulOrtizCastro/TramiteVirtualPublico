@@ -1,0 +1,105 @@
+﻿@using (Html.BeginForm("asignarExpediente", "Gestion", FormMethod.Post, new { @id = "frmAsignarExpediente", @class = "", @enctype = "multipart/form-data" }))
+{
+    <div class="panel-body">
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <label>
+                    Asignar Expediente a :</label>
+                <input type="text" id="asignarExpe_tbDesFuncionario" class="form-control" placeholder="Escribir el nombre de funcionario a asignar..." />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2">
+                <label for="ID_TRATAMIENTO" style="font-weight: bold">
+                    Tratamiento</label>
+            </div>
+            <div class="col-sm-10">
+                <select id="asignarExpe_ddlTratamiento" class="form-control input-sm" style="cursor: pointer"
+                    title="Tratamiento">
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2">
+                <label for="ID_PRIORIDAD" style="font-weight: bold">
+                    Prioridad</label>
+            </div>
+            <div class="col-sm-2">
+                <select id="asignarExpe_ddlPrioridad" class="form-control input-sm" style="cursor: pointer"
+                    title="Prioridad">
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label for="ID_PLAZO" style="font-weight: bold">
+                    Plazo (En dias)</label>
+            </div>
+            <div class="col-sm-2">
+                <input type="text" id="asignarExpe_tbPlazo" value="30" />
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
+                <select id="asignarExpe_ddlTipoDia" class="form-control input-sm" style="cursor: pointer"
+                    title="Plazo">
+                    <option value="U" selected="selected">Laborable</option>
+                    <option value="C">Calendario</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2">
+                <label for="ID_COMENTARIO" style="font-weight: bold">
+                    Observaciones</label>
+            </div>
+            <div class="col-sm-10">
+                <textarea id="asignarExpe_taComentarios" rows="6" cols="100"></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <a href="javascript:void(0)" id="asignarExpe_DesOficina_Insertar"><i class="fa fa-plus">
+                </i>&nbsp;Agregar</a> &nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <div id="asignarExpe_jqGridAsignar" class="grid" style="font-size: 11px">
+                    <table id="asignarExpe_tablaAsignar">                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-12" style="text-align: right">
+            <button id="asignarExpe_btnCancelar" class="btn btn-default" type="button">
+                <i class="clip-close" />Cancelar
+            </button>
+            <button id="asignarExpe_btnGuardarAsignacion" class="btn btn-primary" type="button"
+                data-callback='asignarExpe_grabar()'>
+                Asignar <i class="fa fa-users"></i>
+            </button>
+        </div>
+    </div>
+    <div style="display: none">
+        <input type="hidden" id="asignarExpe_IdSub" />
+        <input type="hidden" id="asignarExpe_IdSubOfi" />
+        <input type="hidden" id="asignarExpe_IdPersona" />
+        <input type="hidden" id="asignarExpe_NomFun" />
+        <input type="hidden" id="asignarExpe_grabaridExpe" value= @ViewBag.ID_EXPE />
+        <input type="hidden" id="asignarExpe_grabaridMovi" value= @ViewBag.ID_MOVI />
+         <input type="hidden" id="asignarExpe_grabaridAccion" value=@ViewBag.ID_ACCION />
+
+        <input type="hidden" id="asignarExpe_grabaridDoc" value= @ViewBag.ID_DOC />
+        <input type="hidden" id="asignarExpe_grabaridTipDoc" value= @ViewBag.ID_TIP_DOC />
+        <input type="hidden" id="asignarExpe_grabaridSub" value= @ViewBag.ID_SUB />
+        <input type="hidden" id="asignarExpe_grabaridSubOfi" value= @ViewBag.ID_SUBOFI />
+        <input type="hidden" id="asignarExpe_grabaridPersona" value= @ViewBag.ID_PERSONA />
+        <input type="hidden" id="asignarExpe_callback" value="@ViewBag.strCallBack" />
+    </div>
+    @Scripts.Render("~/dist/src/app.Registro.regAsignarDocPublico.chunk")
+}

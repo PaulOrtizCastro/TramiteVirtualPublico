@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF5198E2-84FA-401C-A5E6-5B6B0CF63887}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mincetur.Administracion.AplTramiteVirtualPublico.EnTramiteVirtualPublico</RootNamespace>
+    <AssemblyName>EnTramiteVirtualPublico</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CoGeneralesUtil">
+      <HintPath>..\packages\external-ddl\CoGeneralesUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="CoSeguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\external-ddl\CoSeguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="EnGeneralesUtil">
+      <HintPath>..\packages\external-ddl\EnGeneralesUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="EnSeguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\external-ddl\EnSeguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="enAccion.cs" />
+    <Compile Include="enAdjuntarArchivo.cs" />
+    <Compile Include="enAsignar.cs" />
+    <Compile Include="enBase.cs" />
+    <Compile Include="enBorrador.cs" />
+    <Compile Include="enClasif.cs" />
+    <Compile Include="enComent.cs" />
+    <Compile Include="enDescripcionExpe.cs" />
+    <Compile Include="enDestinoEO.cs" />
+    <Compile Include="enDoc.cs" />
+    <Compile Include="enDocElec.cs" />
+    <Compile Include="enDocElecDestino.cs" />
+    <Compile Include="enDocElecExpe.cs" />
+    <Compile Include="enDocLf.cs" />
+    <Compile Include="enEstado.cs" />
+    <Compile Include="enExpe.cs" />
+    <Compile Include="enFormatoCorreo.cs" />
+    <Compile Include="enFormatoPersona.cs" />
+    <Compile Include="enFormatoPlantilla.cs" />
+    <Compile Include="enMail.cs" />
+    <Compile Include="enMovi.cs" />
+    <Compile Include="enOrigen.cs" />
+    <Compile Include="enParametro.cs" />
+    <Compile Include="enPasos.cs" />
+    <Compile Include="enPersona.cs" />
+    <Compile Include="enPriori.cs" />
+    <Compile Include="enRecurso.cs" />
+    <Compile Include="enRequi.cs" />
+    <Compile Include="enTipDoc.cs" />
+    <Compile Include="enTrata.cs" />
+    <Compile Include="enTrazabilidad.cs" />
+    <Compile Include="enTupa.cs" />
+    <Compile Include="enTupaConcepto.cs" />
+    <Compile Include="enTupaLeyenda.cs" />
+    <Compile Include="enUbicacion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoTramiteVirtualPublico\CoTramiteVirtualPublico.csproj">
+      <Project>{6F5F0F32-9EE4-4C69-BB95-A56A06CA6B55}</Project>
+      <Name>CoTramiteVirtualPublico</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

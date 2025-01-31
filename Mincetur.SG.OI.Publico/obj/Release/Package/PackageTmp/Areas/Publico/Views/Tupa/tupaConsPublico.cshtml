@@ -1,0 +1,67 @@
+﻿@Scripts.Render("~/bundles/Reporte/ConsultaTupa")
+<div id="Modal_ConsultaExpe" role="dialog">
+    @*<div class="modal-dialog modal-lg" style="height: 100%;">*@
+    <div style="height: 100%">
+        <div class="nav_menu" style="position: fixed; z-index: 50; height: 45px">
+            <nav>
+                <img src="~/Resource/img/cabecera.jpg" style="padding-left:10px;padding-right:10px;padding-bottom: 15px;"/>
+                   <label style="font-size:20px;font-weight:bold;color:#840404;padding-top: 10px;"><i class="glyphicon glyphicon-duplicate" ></i> Consulta  TUPA</label>
+            </nav>
+        </div>
+        <div class="modal-content" style="height: 100%; padding-top: 35px">
+            <div id="divConsuTupaConcepPublico" class="modal-body">
+                <form id='@("FrmModalConsultaTupaConcepto")' class="form-horizontal form-label-left">
+                <div class="inline-container-Group">
+                    <div class="form-group">
+                        <div class="col-sm-12 col-md-1 col-xs-12">
+                            <label style="font-family: Trebuchet MS; color: DodgerBlue" class="control-label">
+                                Código Tupa</label>
+                        </div>
+                        <div class="col-sm-12 col-md-1 col-xs-12">
+                            <input id="tbConsCodTupa" data-model="COD_TUPA" class="form-control" />
+                        </div>
+                        <div class="col-sm-12 col-md-1 col-xs-12">
+                            <label style="font-family: Trebuchet MS; color: DodgerBlue" class="control-label">
+                                Nombre Tupa</label>
+                        </div>
+                        <div class="col-sm-12 col-md-2 col-xs-12">
+                            <input id="tbConsTupaPub" data-model="DES_NOM" class="form-control" />
+                        </div>
+                        <div class="col-sm-12 col-md-1 col-xs-12">
+                            <label style="font-family: Trebuchet MS; color: DodgerBlue" class="control-label">
+                                Concepto Tupa</label>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-xs-12">
+                            <input id="tbConsConceptoPub" data-model="DES_CONCEPTO" class="form-control" />
+                        </div>
+                        <div class="col-sm-12 col-md-2 col-xs-12">
+                            <button class="btn btn-dark nextBtn" id="ibBuscarTupaConceptoPub" type="button">
+                                <i class="glyphicon glyphicon-search"></i>&nbsp;Buscar</button>
+                            <button class="btn btn-default nextBtn" id="ibLimpiarTupaConceptoPub" type="button">
+                                <i class="glyphicon glyphicon-trash"></i>&nbsp;Limpiar</button>&nbsp;
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div class="col-md-12 col-sm-12 col-xs-12" id="divtblConsTupaConcepPub">
+                        <table id="tblConsTupaConcepPub">
+                        </table>
+                        <div id="divPager_ConsTupaConcepPub">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <table id="tblConsTupaServExcPub">
+                        </table>
+                        <div id="divPager_ConsTupaServExcPub">
+                        </div>
+                    </div>
+                </div>
+                @*  </div>*@
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

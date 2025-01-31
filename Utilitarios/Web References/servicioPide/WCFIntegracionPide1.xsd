@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="Mincetur.Administracion.Integracion.ServicioIntegracion" elementFormDefault="qualified" targetNamespace="Mincetur.Administracion.Integracion.ServicioIntegracion" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="IntegracionVerificaPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TipoPersona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ruc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdDocu" type="xs:int" />
+      <xs:element minOccurs="0" name="NumDocu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Opr" type="xs:int" />
+      <xs:element minOccurs="0" name="IdUsu" type="xs:int" />
+      <xs:element minOccurs="0" name="IdSis" type="xs:int" />
+      <xs:element minOccurs="0" name="IpAcceso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlgRegistro" type="xs:int" />
+      <xs:element minOccurs="0" name="FlgServicio" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IntegracionVerificaPersona" nillable="true" type="tns:IntegracionVerificaPersona" />
+  <xs:complexType name="ResultadoPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdTipo" type="xs:int" />
+      <xs:element minOccurs="0" name="IdError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdErrorDb" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor" type="xs:int" />
+      <xs:element minOccurs="0" name="Valor1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DatosPersona" nillable="true" type="tns:DatosPersona" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultadoPersona" nillable="true" type="tns:ResultadoPersona" />
+  <xs:complexType name="DatosPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="Ruc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPersona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlgNoDomiciliado" type="xs:int" />
+      <xs:element minOccurs="0" name="IdPais" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApePater" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApeMater" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NomPersona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdGenero" type="xs:int" />
+      <xs:element minOccurs="0" name="IdDocu" type="xs:int" />
+      <xs:element minOccurs="0" name="DesDocu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AbrDocu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumDocu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdDomi" type="xs:int" />
+      <xs:element minOccurs="0" name="AbrGenero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdVia" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DesVia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Interior" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdZona" type="xs:int" />
+      <xs:element minOccurs="0" name="DesZona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ObsDomicilio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdUbigeo" type="xs:int" />
+      <xs:element minOccurs="0" name="CodUbigeo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FecNac" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FlgVerificado" type="xs:int" />
+      <xs:element minOccurs="0" name="FlgEst" type="xs:int" />
+      <xs:element minOccurs="0" name="RazonSocial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreComercial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoCivil" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdPerDocu" type="xs:int" />
+      <xs:element minOccurs="0" name="FlgServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="FlgInData" type="xs:int" />
+      <xs:element minOccurs="0" name="DesUbigeo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Restriccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Foto" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="FlgReniec" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DatosPersona" nillable="true" type="tns:DatosPersona" />
+</xs:schema>

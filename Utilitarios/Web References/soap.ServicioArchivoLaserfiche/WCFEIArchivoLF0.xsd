@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://svc.mincetur.gob.pe:8010/SoapLaserfiche/WCFEIArchivoLF.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Mincetur.SG.OI.SoapLaserFiche" />
+  <xs:element name="DescargarArchivo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Mincetur.SG.OI.SoapLaserFiche" minOccurs="0" name="dataExportar" nillable="true" type="q1:DatosDescargarArchivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DescargarArchivoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Mincetur.SG.OI.SoapLaserFiche" minOccurs="0" name="DescargarArchivoResult" nillable="true" type="q2:ResultExportarArch" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExportarArchivoByte">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Mincetur.SG.OI.SoapLaserFiche" minOccurs="0" name="dataExportar" nillable="true" type="q3:DatosExportarArchByte" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExportarArchivoByteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Mincetur.SG.OI.SoapLaserFiche" minOccurs="0" name="ExportarArchivoByteResult" nillable="true" type="q4:ResultExportarArchByte" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubirArchivo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Mincetur.SG.OI.SoapLaserFiche" minOccurs="0" name="dataImportar" nillable="true" type="q5:DatosSubirArchivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubirArchivoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Mincetur.SG.OI.SoapLaserFiche" minOccurs="0" name="SubirArchivoResult" nillable="true" type="q6:ResultImportarArchivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubirArchivoMasivo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Mincetur.SG.OI.SoapLaserFiche" minOccurs="0" name="lstDataImportar" nillable="true" type="q7:ArrayOfDatosSubirArchivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubirArchivoMasivoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Mincetur.SG.OI.SoapLaserFiche" minOccurs="0" name="SubirArchivoMasivoResult" nillable="true" type="q8:ArrayOfResultImportarArchivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

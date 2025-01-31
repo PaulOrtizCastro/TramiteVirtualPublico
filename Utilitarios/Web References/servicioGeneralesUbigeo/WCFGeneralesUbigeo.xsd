@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesUbigeo.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.EnGeneralesUtil" />
+  <xs:element name="listarDepartamento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.EnGeneralesUtil" minOccurs="0" name="oEnUbigeoDepa" nillable="true" type="q1:enUbigeoDepa" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listarDepartamentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.EnGeneralesUtil" minOccurs="0" name="listarDepartamentoResult" nillable="true" type="q2:ArrayOfenUbigeoDepa" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listarProvincia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.EnGeneralesUtil" minOccurs="0" name="oEnUbigeoProv" nillable="true" type="q3:enUbigeoProv" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listarProvinciaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.EnGeneralesUtil" minOccurs="0" name="listarProvinciaResult" nillable="true" type="q4:ArrayOfenUbigeoProv" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listarUbigeo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.EnGeneralesUtil" minOccurs="0" name="oEnUbigeo" nillable="true" type="q5:enUbigeo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listarUbigeoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.EnGeneralesUtil" minOccurs="0" name="listarUbigeoResult" nillable="true" type="q6:ArrayOfenUbigeo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

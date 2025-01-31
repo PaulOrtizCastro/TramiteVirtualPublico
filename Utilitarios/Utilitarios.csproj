@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E67A570-8F48-4F2F-B4CE-B3D1FF018536}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mincetur.Administracion.AplTramiteVirtualPublico.Utilitarios</RootNamespace>
+    <AssemblyName>Utilitarios</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CoGeneralesUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>external-bin\CoGeneralesUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="CoTramiteDocumentario, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\external-ddl\CoTramiteDocumentario.dll</HintPath>
+    </Reference>
+    <Reference Include="EnGeneralesUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>external-bin\EnGeneralesUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="EnSeguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>external-bin\EnSeguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="EnTramiteDocumentario, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\external-ddl\EnTramiteDocumentario.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>external-bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>external-bin\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="NeSeguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>external-bin\NeSeguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <Compile Include="Web References\servicioGenerales.DocCmsConsulta\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\servicioGeneralesDocumento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\servicioGeneralesTipoDocu\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\servicioGeneralesTipoTele\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\servicioGeneralesUbigeo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\servicioGeneralesVia\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\servicioGeneralesZona\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\servicioGestorFileServer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\servicioPide\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\servicioSeguridad.WCFSeguridadEncripDesencrip\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\servicioSunatContribuyente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\soap.Servicio.Correo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\soap.ServicioArchivoLaserfiche\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\soap.ServicioGeneralUtil.Correo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\soap.ServicioGeneralUtil.Estorg\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\soap.servicioGestorSeguridadLogError\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\soap.ServicioSeguridad.SeguridadSistema\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\soap.ServicioUsuSisRolEntEstorg\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/ServicioBorradorDig/Integracion/Services/WCFBorradorElectIntegracionEnviar.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\soap.Servicio.Correo\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/ServicioBorradorDig/Integracion/Services/WCFBorradorElectIntegracionEnviar.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_soap_Servicio_Correo_WCFBorradorElectIntegracionEnviar</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioFileServer/WCFgestorFileServer.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\servicioGestorFileServer\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioFileServer/WCFgestorFileServer.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_servicioGestorFileServer_WCFgestorFileServer</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioGenerales/docCms/Services/WCFGeneralesDocCmsConsulta.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\servicioGenerales.DocCmsConsulta\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioGenerales/docCms/Services/WCFGeneralesDocCmsConsulta.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_servicioGenerales_DocCmsConsulta_WCFGeneralesDocCmsConsulta</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesCorreo.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\soap.ServicioGeneralUtil.Correo\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesCorreo.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_soap_ServicioGeneralUtil_Correo_WCFGeneralesCorreo</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesEstorg.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\soap.ServicioGeneralUtil.Estorg\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesEstorg.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_soap_ServicioGeneralUtil_Estorg_WCFGeneralesEstorg</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioSeguridad/Services/WCFSeguridadUsuSisRolEntEstorg.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\soap.ServicioUsuSisRolEntEstorg\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioSeguridad/Services/WCFSeguridadUsuSisRolEntEstorg.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_soap_ServicioUsuSisRolEntEstorg_WCFSeguridadUsuSisRolEntEstorg</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadEncripDesencrip.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\servicioSeguridad.WCFSeguridadEncripDesencrip\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadEncripDesencrip.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_servicioSeguridad_WCFSeguridadEncripDesencrip_WCFSeguridadEncripDesencrip</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadLog.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\soap.servicioGestorSeguridadLogError\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadLog.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_soap_servicioGestorSeguridadLogError_WCFSeguridadLog</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadSistema.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\soap.ServicioSeguridad.SeguridadSistema\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadSistema.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_soap_ServicioSeguridad_SeguridadSistema_WCFSeguridadSistema</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioIntegracion/DirectorioPersonaPide/soap/WCFIntegracionPide.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\servicioPide\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioIntegracion/DirectorioPersonaPide/soap/WCFIntegracionPide.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_servicioPide_WCFIntegracionPide</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/SoapLaserfiche/WCFEIArchivoLF.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\soap.ServicioArchivoLaserfiche\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/SoapLaserfiche/WCFEIArchivoLF.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_soap_ServicioArchivoLaserfiche_WCFEIArchivoLF</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/wsSunat/sistema/ws/wsContribuyente.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\servicioSunatContribuyente\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/wsSunat/sistema/ws/wsContribuyente.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_ServicioSunatContribuyente_wsContribuyente</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesDocIdentidad.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\servicioGeneralesDocumento\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesDocIdentidad.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_servicioDocumento_WCFGeneralDocIdentidad</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesTipoDocu.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\servicioGeneralesTipoDocu\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesTipoDocu.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_servicioGeneralesTipoDocu_WCFGeneralesTipoDocu</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesTipoTele.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\servicioGeneralesTipoTele\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesTipoTele.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_servicioGeneralesTipoTele_WCFGeneralesTipoTele</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesUbigeo.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\servicioGeneralesUbigeo\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesUbigeo.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_servicioGeneralesUbigeo_WCFGeneralesUbigeo</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesVia.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\servicioGeneralesVia\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesVia.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_servicioGeneralesVia_WCFGeneralesVia</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesZona.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\servicioGeneralesZona\</RelPath>
+      <UpdateFromURL>http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesZona.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Utilitarios_servicioGeneralesZona_WCFGeneralesZona</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioGenerales.DocCmsConsulta\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioGenerales.DocCmsConsulta\ResultadoDocCms.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioGenerales.DocCmsConsulta\WCFGeneralesDocCmsConsulta.wsdl" />
+    <None Include="Web References\servicioGenerales.DocCmsConsulta\WCFGeneralesDocCmsConsulta.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGenerales.DocCmsConsulta\WCFGeneralesDocCmsConsulta0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGenerales.DocCmsConsulta\WCFGeneralesDocCmsConsulta1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesDocumento\enDocIdentidad.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioGeneralesDocumento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioGeneralesDocumento\WCFGeneralDocIdentidad.wsdl" />
+    <None Include="Web References\servicioGeneralesDocumento\WCFGeneralesDocIdentidad.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesDocumento\WCFGeneralesDocIdentidad0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesDocumento\WCFGeneralesDocIdentidad1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoDocu\enTipoDocu1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoDocu\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoDocu\WCFGeneralesTipoDocu.wsdl" />
+    <None Include="Web References\servicioGeneralesTipoDocu\WCFGeneralesTipoDocu.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoDocu\WCFGeneralesTipoDocu0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoDocu\WCFGeneralesTipoDocu1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoDocu\WCFGeneralesTipoDocu2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoTele\enTipoTele1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoTele\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoTele\WCFGeneralesTipoTele.wsdl" />
+    <None Include="Web References\servicioGeneralesTipoTele\WCFGeneralesTipoTele.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoTele\WCFGeneralesTipoTele0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoTele\WCFGeneralesTipoTele1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesTipoTele\WCFGeneralesTipoTele2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesUbigeo\enUbigeo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioGeneralesUbigeo\enUbigeoDepa1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioGeneralesUbigeo\enUbigeoProv1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioGeneralesUbigeo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioGeneralesUbigeo\WCFGeneralesUbigeo.wsdl" />
+    <None Include="Web References\servicioGeneralesUbigeo\WCFGeneralesUbigeo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesUbigeo\WCFGeneralesUbigeo0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesUbigeo\WCFGeneralesUbigeo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesVia\enVia1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioGeneralesVia\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioGeneralesVia\WCFGeneralesVia.wsdl" />
+    <None Include="Web References\servicioGeneralesVia\WCFGeneralesVia.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesVia\WCFGeneralesVia0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesVia\WCFGeneralesVia1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesZona\enZona1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioGeneralesZona\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioGeneralesZona\WCFGeneralesZona.wsdl" />
+    <None Include="Web References\servicioGeneralesZona\WCFGeneralesZona.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesZona\WCFGeneralesZona0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGeneralesZona\WCFGeneralesZona1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGestorFileServer\getResultWSGFileServer.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioGestorFileServer\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioGestorFileServer\setDatosWSGFileServer.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioGestorFileServer\WCFgestorFileServer.wsdl" />
+    <None Include="Web References\servicioGestorFileServer\WCFgestorFileServer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGestorFileServer\WCFgestorFileServer0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioGestorFileServer\WCFgestorFileServer1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioPide\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioPide\ResultadoPersona.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioPide\WCFIntegracionPide.wsdl" />
+    <None Include="Web References\servicioPide\WCFIntegracionPide.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioPide\WCFIntegracionPide0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioPide\WCFIntegracionPide1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioSeguridad.WCFSeguridadEncripDesencrip\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioSeguridad.WCFSeguridadEncripDesencrip\WCFSeguridadEncripDesencrip.wsdl" />
+    <None Include="Web References\servicioSeguridad.WCFSeguridadEncripDesencrip\WCFSeguridadEncripDesencrip.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioSeguridad.WCFSeguridadEncripDesencrip\WCFSeguridadEncripDesencrip0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\servicioSunatContribuyente\enContribuyente.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicioSunatContribuyente\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\servicioSunatContribuyente\wsContribuyente.wsdl" />
+    <None Include="Web References\soap.Servicio.Correo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\soap.Servicio.Correo\Resultado.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\soap.Servicio.Correo\WCFBorradorElectIntegracionEnviar.wsdl" />
+    <None Include="Web References\soap.Servicio.Correo\WCFBorradorElectIntegracionEnviar.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.Servicio.Correo\WCFBorradorElectIntegracionEnviar0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.Servicio.Correo\WCFBorradorElectIntegracionEnviar1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioArchivoLaserfiche\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\soap.ServicioArchivoLaserfiche\ResultExportarArch1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\soap.ServicioArchivoLaserfiche\ResultExportarArchByte1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\soap.ServicioArchivoLaserfiche\ResultImportarArchivo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\soap.ServicioArchivoLaserfiche\WCFEIArchivoLF.wsdl" />
+    <None Include="Web References\soap.ServicioArchivoLaserfiche\WCFEIArchivoLF.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioArchivoLaserfiche\WCFEIArchivoLF0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioArchivoLaserfiche\WCFEIArchivoLF1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Correo\coResultadoDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Correo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Correo\WCFGeneralesCorreo.wsdl" />
+    <None Include="Web References\soap.ServicioGeneralUtil.Correo\WCFGeneralesCorreo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Correo\WCFGeneralesCorreo0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Correo\WCFGeneralesCorreo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Correo\WCFGeneralesCorreo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Correo\WCFGeneralesCorreo3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Correo\WCFGeneralesCorreo4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Correo\WCFGeneralesCorreo5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Estorg\enEstorg1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Estorg\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Estorg\WCFGeneralesEstorg.wsdl" />
+    <None Include="Web References\soap.ServicioGeneralUtil.Estorg\WCFGeneralesEstorg.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Estorg\WCFGeneralesEstorg0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioGeneralUtil.Estorg\WCFGeneralesEstorg1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.servicioGestorSeguridadLogError\coResultadoDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\soap.servicioGestorSeguridadLogError\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\soap.servicioGestorSeguridadLogError\WCFSeguridadLog.wsdl" />
+    <None Include="Web References\soap.servicioGestorSeguridadLogError\WCFSeguridadLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.servicioGestorSeguridadLogError\WCFSeguridadLog0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.servicioGestorSeguridadLogError\WCFSeguridadLog1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.servicioGestorSeguridadLogError\WCFSeguridadLog2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioSeguridad.SeguridadSistema\coResultadoDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\soap.ServicioSeguridad.SeguridadSistema\enAcceso1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\soap.ServicioSeguridad.SeguridadSistema\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\soap.ServicioSeguridad.SeguridadSistema\WCFSeguridadSistema.wsdl" />
+    <None Include="Web References\soap.ServicioSeguridad.SeguridadSistema\WCFSeguridadSistema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioSeguridad.SeguridadSistema\WCFSeguridadSistema0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioSeguridad.SeguridadSistema\WCFSeguridadSistema1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioSeguridad.SeguridadSistema\WCFSeguridadSistema2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioUsuSisRolEntEstorg\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\soap.ServicioUsuSisRolEntEstorg\ResultadoUsuSisRolEstorg.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\soap.ServicioUsuSisRolEntEstorg\WCFSeguridadUsuSisRolEntEstorg.wsdl" />
+    <None Include="Web References\soap.ServicioUsuSisRolEntEstorg\WCFSeguridadUsuSisRolEntEstorg.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioUsuSisRolEntEstorg\WCFSeguridadUsuSisRolEntEstorg0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\soap.ServicioUsuSisRolEntEstorg\WCFSeguridadUsuSisRolEntEstorg1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="external-bin\CoGeneralesUtil.dll" />
+    <Content Include="external-bin\CoSeguridad.dll" />
+    <Content Include="external-bin\CoSeguridad.pdb" />
+    <Content Include="external-bin\CoSeguridad.xml" />
+    <Content Include="external-bin\CoTramiteDocumentario.dll" />
+    <Content Include="external-bin\CoTramiteDocumentario.pdb" />
+    <Content Include="external-bin\CoTramiteDocumentario.xml" />
+    <Content Include="external-bin\DaSeguridad.dll" />
+    <Content Include="external-bin\DaSeguridad.pdb" />
+    <Content Include="external-bin\DaSeguridad.xml" />
+    <Content Include="external-bin\DaTramiteDocumentario.dll" />
+    <Content Include="external-bin\DaTramiteDocumentario.pdb" />
+    <Content Include="external-bin\DaTramiteDocumentario.xml" />
+    <Content Include="external-bin\EnGeneralesUtil.dll" />
+    <Content Include="external-bin\EnSeguridad.dll" />
+    <Content Include="external-bin\EnSeguridad.pdb" />
+    <Content Include="external-bin\EnSeguridad.xml" />
+    <Content Include="external-bin\EnTramiteDocumentario.dll" />
+    <Content Include="external-bin\EnTramiteDocumentario.pdb" />
+    <Content Include="external-bin\EnTramiteDocumentario.xml" />
+    <Content Include="external-bin\itextsharp.dll" />
+    <Content Include="external-bin\itextsharp.xmlworker.dll" />
+    <Content Include="external-bin\NeSeguridad.dll" />
+    <Content Include="external-bin\NeSeguridad.pdb" />
+    <Content Include="external-bin\NeSeguridad.xml" />
+    <Content Include="external-bin\NeTramiteDocumentario.dll" />
+    <Content Include="external-bin\NeTramiteDocumentario.pdb" />
+    <Content Include="external-bin\NeTramiteDocumentario.xml" />
+    <None Include="Web References\servicioSunatContribuyente\wsContribuyente.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

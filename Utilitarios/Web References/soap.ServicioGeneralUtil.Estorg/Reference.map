@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesEstorg.svc?wsdl" filename="WCFGeneralesEstorg.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesEstorg.svc?xsd=xsd2" filename="WCFGeneralesEstorg.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesEstorg.svc?xsd=xsd0" filename="WCFGeneralesEstorg0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesEstorg.svc?xsd=xsd1" filename="WCFGeneralesEstorg1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

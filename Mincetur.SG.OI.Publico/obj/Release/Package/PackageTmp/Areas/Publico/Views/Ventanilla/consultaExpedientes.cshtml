@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Consulta Publica de expedientes</title>
+    <style>
+        .login-dialog .modal-dialog {
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        var strDesOrigen = '@Request.QueryString["strDesOrigen"]';
+        var strTipoDocumento = '@Request.QueryString["strTipoDocumento"]';
+        var strAsunto = '@Request.QueryString["strAsunto"]';
+        var strfec = '@Request.QueryString["strfec"]';
+        var strPriori = '@Request.QueryString["strPriori"]';
+        var strNumDoc = '@Request.QueryString["strNumDoc"]';
+        var strFecPlazo = '@Request.QueryString["strFecPlazo"]';
+        var strPersona = '@Request.QueryString["strPersona"]';
+
+        var strExpediente = '@Request.QueryString["strExpediente"]';
+        var strCodMovi = '@Request.QueryString["codMovi"]';
+        var strIdPersona = '@Request.QueryString["idPersona"]';
+        var strIdResponsable = '@Request.QueryString["idResponsable"]';
+        var strSubPivot = '@Request.QueryString["SubPivot"]';
+        var strCodRol = '@Request.QueryString["codRol"]';
+
+
+        var strNumFolios = '@Request.QueryString["strNumFolios"]';
+        var strDesEstado = '@Request.QueryString["strDesEstado"]';
+        var strCodLog = '@Request.QueryString["strCodLog"]';
+        var strObs = '@Request.QueryString["strObs"]';
+        var strCodFuente = '@Request.QueryString["cf"]';
+
+    </script>
+    @Scripts.Render("~/bundles/Reporte/ConsultaExpedientes")
+
+    <div id="divGrilla_consExpeVirtual" class="jqGridDocs" style="text-align: center;">
+        @*<table id="tbGrilla_consExpeVirtual">
+        </table>*@
+    </div>
+    <div id="divPager_consExpeVirtual">
+    </div>
+    <div id="divMensajeRegExpeSimple">
+    </div>
+    <div style="display: none">
+        <input type="hidden" id="hfStrVerDocumentos" value="@ViewBag.strVerDocumentos" />
+        <input type="hidden" id="hfIdConsDocu" value="@ViewBag.validConsDocu" />
+        <input type="hidden" id="hfIdRolJefes" value="@ViewBag.strCodigoJefes" />
+
+        <input type="hidden" id="hfIdRolAdministrador" value="@ViewBag.strRolAdministrador" />
+        <input type="hidden" id="hfIdRolDirector" value="@ViewBag.strRolDirector" />
+        <input type="hidden" id="hfIdRolSecretaria" value="@ViewBag.strRolSecretaria" />
+        <input type="hidden" id="hfIdRolEspecialista" value="@ViewBag.strRolEspecialista" />
+        <input type="hidden" id="hfIdRolAsistente" value="@ViewBag.strRolAsistente" />
+        <input type="hidden" id="hfIdRolDirectorGeneral" value="@ViewBag.strRolDirectorGeneral" />
+        <input type="hidden" id="hfIdRolSeguimiento" value="@ViewBag.strRolSeguimiento" />
+
+        <input type="hidden" id="hfIdConsGeneral" value="@ViewBag.strRolConsGeneral" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadLog.svc?xsd=xsd1" filename="WCFSeguridadLog.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadLog.svc?xsd=xsd0" filename="WCFSeguridadLog0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadLog.svc?wsdl" filename="WCFSeguridadLog.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadLog.svc?xsd=xsd3" filename="WCFSeguridadLog1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadLog.svc?xsd=xsd2" filename="WCFSeguridadLog2.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

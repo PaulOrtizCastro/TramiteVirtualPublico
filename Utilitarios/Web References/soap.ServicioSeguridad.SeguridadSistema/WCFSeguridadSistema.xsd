@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.EnSeguridad" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.EnSeguridad" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadSistema.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.CoSeguridad" />
+  <xs:complexType name="enAcceso">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:enTipoAcceso">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CANTIDAD" type="xs:int" />
+          <xs:element minOccurs="0" name="COD_FUENTE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DES_OBS" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DES_SIS" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DES_URL" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FEC_ACCESO" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FEC_INI" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FLG_MOVIL" type="xs:int" />
+          <xs:element minOccurs="0" name="ID_ACCESO" type="xs:int" />
+          <xs:element minOccurs="0" name="ID_PERSONA" type="xs:int" />
+          <xs:element minOccurs="0" name="ID_SIS" type="xs:int" />
+          <xs:element minOccurs="0" name="IP_ACCESO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ORDEN" type="xs:int" />
+          <xs:element minOccurs="0" name="enGeoPlugin" nillable="true" type="tns:enGeoPlugin" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="enAcceso" nillable="true" type="tns:enAcceso" />
+  <xs:complexType name="enTipoAcceso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DES_TIPOACCESO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_TIPOACCESO" type="xs:int" />
+      <xs:element minOccurs="0" name="OPR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="USU_MODI" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="enTipoAcceso" nillable="true" type="tns:enTipoAcceso" />
+  <xs:complexType name="enGeoPlugin">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.CoSeguridad" base="q1:coHBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="GEOPLUGIN_AREACODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_CITY" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_CONTINENTCODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_COUNTRYCODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_COUNTRYNAME" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_CURRENCYCODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_DMACODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_LATITUDE" type="xs:decimal" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_LONGITUDE" type="xs:decimal" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_REGION" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_REGIONCODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_REGIONNAME" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_REQUEST" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GEOPLUGIN_STATUS" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="enGeoPlugin" nillable="true" type="tns:enGeoPlugin" />
+  <xs:complexType name="ArrayOfenAcceso">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="enAcceso" nillable="true" type="tns:enAcceso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfenAcceso" nillable="true" type="tns:ArrayOfenAcceso" />
+</xs:schema>

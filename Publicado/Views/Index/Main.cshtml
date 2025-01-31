@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Gestión Documento Digital";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<script type="text/javascript">
+    var strRutaServidorMaster = '@string.Format("{0}://{1}:{2}", Request.Url.Scheme, Request.Url.Host, Request.Url.Port)';
+    var strRutaAplicacionMaster = '@Url.Content("~")';
+    var strRutaImagenesMaster = "";
+</script>
+<div id="divContenidoMaster" class="contenido">
+     @Html.Partial("_PrincipalPartial")
+</div>

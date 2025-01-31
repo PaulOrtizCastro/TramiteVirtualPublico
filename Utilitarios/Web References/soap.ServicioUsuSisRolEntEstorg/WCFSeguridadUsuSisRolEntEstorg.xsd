@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.ServicioWeb.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.ServicioWeb.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="DatosUsuSisRolEstorg">
+    <xs:sequence>
+      <xs:element name="IdUsu" type="xs:int" />
+      <xs:element name="IdSis" type="xs:int" />
+      <xs:element name="IdRol" nillable="true" type="xs:string" />
+      <xs:element name="IdEnt" type="xs:int" />
+      <xs:element name="IdSub" type="xs:int" />
+      <xs:element name="IdSubOfi" nillable="true" type="xs:string" />
+      <xs:element name="Dato" nillable="true" type="xs:string" />
+      <xs:element name="FlgEst" type="xs:int" />
+      <xs:element name="Opr" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DatosUsuSisRolEstorg" nillable="true" type="tns:DatosUsuSisRolEstorg" />
+  <xs:complexType name="ResultadoUsuSisRolEstorg">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Resultado">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="lstUsuSisRolEntEstorg" nillable="true" type="tns:ArrayOfUsuSisRolEntEstorg" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultadoUsuSisRolEstorg" nillable="true" type="tns:ResultadoUsuSisRolEstorg" />
+  <xs:complexType name="Resultado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdTipo" type="xs:int" />
+      <xs:element minOccurs="0" name="DesError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor2" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Resultado" nillable="true" type="tns:Resultado" />
+  <xs:complexType name="ArrayOfUsuSisRolEntEstorg">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UsuSisRolEntEstorg" nillable="true" type="tns:UsuSisRolEntEstorg" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsuSisRolEntEstorg" nillable="true" type="tns:ArrayOfUsuSisRolEntEstorg" />
+  <xs:complexType name="UsuSisRolEntEstorg">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdUsuSisRolEnt" type="xs:int" />
+      <xs:element minOccurs="0" name="IdEnt" type="xs:int" />
+      <xs:element minOccurs="0" name="DesEnt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdUsu" type="xs:int" />
+      <xs:element minOccurs="0" name="NomUsu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApePater" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApeMater" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Correo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodLog" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdSis" type="xs:int" />
+      <xs:element minOccurs="0" name="DesSis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodEst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdSub" type="xs:int" />
+      <xs:element minOccurs="0" name="IdSubOfi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdOfiConcat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesSubOfi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AbrSubOfi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlgEst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UsuSisRolEntEstorg" nillable="true" type="tns:UsuSisRolEntEstorg" />
+</xs:schema>

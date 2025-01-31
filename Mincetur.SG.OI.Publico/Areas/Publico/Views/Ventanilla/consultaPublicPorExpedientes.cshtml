@@ -1,0 +1,84 @@
+﻿@using CaptchaMvc.HtmlHelpers;
+@using CaptchaMvc.Interface;
+@{
+    Layout = null;
+    ViewBag.Title = "Consulta Pública de expedientes";
+}
+@Scripts.Render("~/bundles/Reporte/ConsultaPorExpedientes")
+@*<body>*@
+<style type="text/css">
+    th
+    {
+        background: #DAECF7;
+        vertical-align: top;
+        border-collapse: collapse;
+        padding: 0.3em;
+        caption-side: bottom;
+    }
+    
+    .control-label
+    {
+        text-align: inherit !important;
+        padding: 16px;
+    }
+    .btn-dark
+    {
+        background-color: #595959 !important;
+        color: #e9edef !important;
+    }
+   @* .modal-header
+    {
+        background-color: #bf0909 !important;
+    }*@
+</style>
+<div id="Modal_ConsultaPorExpe" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header" style="cursor: pointer; background-color: #bf0909">
+                <h4 class="modal-title">
+                    <img src="../../Resource/img/logo_MINCETUR.png" />
+                    @*<i class="fa fa-pencil"></i>Búsqueda de expediente*@ <span class="pull-right" style="color: #FFFFFF">
+                        Seguimiento de Trámites</span>
+                    <label id="lblCabeceraExpe" />
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form id='@("FrmModalConsPorExpe")' class="form-horizontal form-label-left">
+                <div class="inline-container-Group">
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label style="font-family: Trebuchet MS; color: #595959">
+                                N° Expediente</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="text" id="tbConsuExpeVentanilla" class="form-control"  placeholder="Ingrese número de expediente a consultar" name="tbConsuExpeVentanilla" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-10">
+                            <div id="divCaptcha">
+                                @Html.Partial("_PartialCaptcha")
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            @*<button id="btnBuscarTupa" class="btn btn-dark nextBtn pull-right" title="Click aqui para buscar"
+                                type="button" style="margin-left: -10px; display: block;">
+                                <i class="fa fa-search"></i>Buscar Expediente
+                            </button>*@
+                            <button id="btnBuscarTupa" class="btn btn-dark pull-right" title="Click aqui para buscar"
+                                type="button">
+                                <i class="fa fa-search"></i>Buscar Expediente
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@*</body>*@ @*</html>*@ 

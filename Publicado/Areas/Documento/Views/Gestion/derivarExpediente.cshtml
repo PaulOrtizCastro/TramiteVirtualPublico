@@ -1,0 +1,107 @@
+﻿@using (Html.BeginForm("derivarExpediente", "Gestion", FormMethod.Post, new { @id = "frmDerivarExpediente", @class = "", @enctype = "multipart/form-data" }))
+{ 
+    <div class="panel-body">
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <label>
+                    Derivar el Expediente a la Oficina:</label>
+                <input type="text" id="derivarExpe_tbDesOficina" class="form-control" placeholder="Escribir el nombre de oficina a derivar..." />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2">
+                <label for="ID_TRATAMIENTO" style="font-weight: bold">
+                    Tratamiento</label>
+            </div>
+            <div class="col-sm-10">
+                <select id="derivarExpe_ddlTratamiento" class="form-control input-sm" style="cursor: pointer"
+                    title="Tratamiento">
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2">
+                <label for="ID_PRIORIDAD" style="font-weight: bold">
+                    Prioridad</label>
+            </div>
+            <div class="col-sm-2">
+                <select id="derivarExpe_ddlPrioridad" class="form-control input-sm" style="cursor: pointer"
+                    title="Prioridad">
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label for="ID_PLAZO" style="font-weight: bold">
+                    Plazo (En dias)</label>
+            </div>
+            <div class="col-sm-2">
+                <input type="text" id="derivarExpe_tbPlazo" value="30" />
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
+                <select id="derivarExpe_ddlTipoDia" class="form-control input-sm" style="cursor: pointer"
+                    title="Plazo">
+                    <option value="U" selected="selected">Laborable</option>
+                    <option value="C">Calendario</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2">
+                <label for="ID_COMENTARIO" style="font-weight: bold">
+                    Observaciones</label>
+            </div>
+            <div class="col-sm-10">
+                <textarea id="derivarExpe_taComentarios" rows="6" cols="100"></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <a href="javascript:void(0)" id="derivarExpe_Insertar"><i class="fa fa-plus"></i>&nbsp;Agregar</a>
+                &nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <div id="derivarExpe_jqGridDerivar" class="grid" style="font-size: 11px">
+                    <table id="derivarExpe_tablaDerivar">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-sm-12" style="text-align: right">
+            <button id="derivarExpe_btnCancelar" class="btn btn-default" type="button">
+                <i class="clip-close" />Cancelar
+            </button>
+            <button id="derivarExpe_btnGuardar" class="btn btn-primary" type="button" data-callback='regDerivarDocPublico_grabar()'>
+                Derivar <i class="fa fa-list"></i>
+            </button>
+        </div>
+    </div>
+
+       
+
+    <div style="display: none">
+        <input type="hidden" id="derivarExpe_idExpe" value= @ViewBag.ID_EXPE />
+        <input type="hidden" id="derivarExpe_idMovi" value= @ViewBag.ID_MOVI />
+        <input type="hidden" id="derivarExpe_idDoc" value= @ViewBag.ID_DOC />
+        <input type="hidden" id="derivarExpe_idTipDoc" value= @ViewBag.ID_TIP_DOC />
+        <input type="hidden" id="derivarExpe_idSub" value= @ViewBag.ID_SUB />
+        <input type="hidden" id="derivarExpe_idSubOfi" value= @ViewBag.ID_SUBOFI />
+        <input type="hidden" id="derivarExpe_idPersona" value= @ViewBag.ID_PERSONA />
+        <input type="hidden" id="derivarExpe_idAccion" value=@ViewBag.ID_ACCION />
+
+        <input type="hidden" id="derivarExpe_destinoIdSub" />
+        <input type="hidden" id="derivarExpe_destinoIdSubOfi" />
+        <input type="hidden" id="derivarExpe_destinoDesSubOfi" />
+        <input type="hidden" id="derivarExpe_callback" value="@ViewBag.strCallBack" />
+    </div>
+    @Scripts.Render("~/dist/src/app.Registro.regDerivarDocPublico.chunk")
+}

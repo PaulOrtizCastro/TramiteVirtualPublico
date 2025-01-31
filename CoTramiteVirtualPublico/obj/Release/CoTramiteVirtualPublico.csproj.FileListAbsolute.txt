@@ -1,0 +1,6 @@
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\CoTramiteVirtualPublico\bin\Release\CoTramiteVirtualPublico.dll
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\CoTramiteVirtualPublico\bin\Release\CoTramiteVirtualPublico.pdb
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\CoTramiteVirtualPublico\obj\Release\CoTramiteVirtualPublico.csproj.CoreCompileInputs.cache
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\CoTramiteVirtualPublico\obj\Release\CoTramiteVirtualPublico.dll
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\CoTramiteVirtualPublico\obj\Release\CoTramiteVirtualPublico.pdb
+D:\Mincetur\Fuentes\AplGestionDoc\AplTramiteVirtualPublico\CoTramiteVirtualPublico\obj\Release\CoTramiteVirtualPublico.csproj.AssemblyReference.cache

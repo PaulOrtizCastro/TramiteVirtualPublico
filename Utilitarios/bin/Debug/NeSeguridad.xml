@@ -1,0 +1,177 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NeSeguridad
+</name>
+</assembly>
+<members>
+<member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.ValidaAcceso(System.String,System.Int32@)">
+	<summary>
+ Metodo valida acceso ingresando el login del usuario
+ </summary>
+	<param name="strCodLog">Login de Usuario</param>
+	<param name="intIdUsu">Codigo del usuario</param>
+	<returns>Si el acceso es satisfactorio devuelve true si no false y retorna el codigo del usuario como variable de salida</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.TraeValidaUsuarioSistema(System.Int32,System.Int32)">
+	<summary>
+ Valida si el usuario está registrado para el sistema seleccionado
+ </summary>
+	<param name="intIdUsu">Código del Usuario</param>
+	<param name="intIdSis">Código del Sistema</param>
+	<returns>Retorna True si existe False si no</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.TraeLlave">
+	<summary>
+ Trae la clave para la encriptación del código del usuario
+ </summary>
+	<returns>Retorna Cadena</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.TraeRolesUsuario(System.Int32,System.Int32)">
+	<summary>
+ Trae los roles concatenados de un usuario interno 
+ </summary>
+	<param name="intIdUsu">Código de Usuario</param>
+	<param name="intIdSis">Código del Sistema</param>
+	<returns>Retorna una Cadena</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.TraeNombreUsuario(System.Int32)">
+	<summary>
+ Trae el nombre completo del usuario
+ </summary>
+	<param name="intIdUsu">Código del Usuario Interno</param>
+	<returns>Retorna String</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.TraeLogin(System.Int32)">
+	<summary>
+ Trae el nombre del login del usuario
+ </summary>
+	<param name="intIdUsu">Código del usuario</param>
+	<returns>Retorna un String </returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.TraeCodigoUsuario(System.String)">
+	<summary>
+ Trae el código del usuario de acuerdo al login
+ </summary>
+	<param name="strCodLog">Login del usuario</param>
+	<returns>Retorna el código del usuario</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.TraeEstadoUsuario(System.Int32)">
+	<summary>
+ Trae el estado del Usuario
+ </summary>
+	<param name="strcodusu">Código del Usuario</param>
+	<returns>Retorna el Estado del Usuario</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.TraeCodigoOficina(System.String)">
+	<summary>
+ Trae el código de la oficina
+ </summary>
+	<param name="strcodusu">Código del Usuario</param>
+	<returns>Retorna el codigo de la oficina</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.TraeCorreoUsuario(System.String)">
+	<summary>
+ Trae el correo del usuario
+ </summary>
+	<param name="strcodusu">Código del Usuario</param>
+	<returns>El correo del usuario</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.TraeCodigoSistema(System.Int32,System.Int32)">
+	<summary>
+ Trae el codigo del sistema
+ </summary>
+	<param name="intIdUsu">Codigo del Usuario</param>
+	<param name="intIdSis">Codigo del Sistema</param>
+	<returns>Retorna el codigo del sistema</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neSeguridad.TraeDescripcionSistema(System.Int32)">
+	<summary>
+ Trae la descripcion del sistema
+ </summary>
+	<param name="intIdSis">Codigo del Sistema</param>
+	<returns>Retorna el descripcion del sistema</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neUsu.traerdatosUsuario(System.Int32)">
+	<summary>
+ Mètodo traer datos del usuario
+ </summary>
+	<param name="intIdUsu"></param>
+	<returns>retorna la entidad EnUsu</returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neUsu.traerdatosUsuario(Mincetur.Administracion.Seguridad.EnSeguridad.enUsu,System.Int32)">
+	<summary>
+ Mètodo de traer datos del usuario
+ </summary>
+	<param name="objEnUsu"> enUsu
+ enUsu.ID_PERSONA: 'Id Usuario',
+ enUsu.NOMBRES: 'Nombre del Usuario',
+ enUsu.APE_PATER: 'Apellido Paterno',
+ enUsu.APE_MATER: 'Apellido Materno' ,
+ enUsu.NOMFUNC:'Nombre Completo',
+ enUsu.ID_SUB:'Correlativo Oficina',
+ enUsu.ID_SUBOFI:'Id Oficina',
+ enUsu.DES_SUBOFI:'Descripcion de Oficina',
+ enUsu.ID_CARGOFUN:'Id Cargo Funcion',
+ enUsu.DES_CARGOFUN:'Descripcion del Cargo Funcional',
+ enUsu.ID_SUBCARGO:'Descripción del sistema',
+ enUsu.DES_SUBCARGO:'Logo Mincetur',
+ enUsu.ANEXO:'Anexo Principal',
+ enUsu.CORREO:'Correo Principal',
+ enUsu.PISO:'Piso del Usuario'.
+ </param>
+	<returns>Retorna la entidad EnUsu</returns>
+	<remarks></remarks>
+</member><member name="P:Mincetur.Administracion.Seguridad.NeSeguridad.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:Mincetur.Administracion.Seguridad.NeSeguridad.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
+</summary>
+</member><member name="T:Mincetur.Administracion.Seguridad.NeSeguridad.My.Resources.Resources">
+	<summary>
+  Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neAcceso.listar(Mincetur.Administracion.Seguridad.CoSeguridad.coIEntidad,System.Int32)">
+	<summary>
+ Lista sistemas mas ingresados
+ </summary>
+	<param name="obj"></param>
+	<param name="intFlag"></param>
+ si intFlag = 1 retorna los sistemas mas accesados  
+ <returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neAcceso.insertar(Mincetur.Administracion.Seguridad.CoSeguridad.coIEntidad,System.String)">
+	<summary>
+ Insertar a la tabla sgacceso
+ </summary>
+	<param name="obj">Variable tipo </param>
+	<param name="strFlag"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mincetur.Administracion.Seguridad.NeSeguridad.neUsuSisRol.listarUsuSisRoles(Mincetur.Administracion.Seguridad.EnSeguridad.enUsuSisRol,System.String)">
+	<summary>
+  Lista usuarios y correos
+ </summary>
+	<param name="objEnUsuSisRol">
+ objEnUsuSisRol.Id_Usu : 'Codigo  Usuario'
+ objEnUsuSisRol.Id_Sis : 'Codigo Sistema' (Obligatorio)
+ objEnUsuSisRol.Id_Rol : 'Codigo Rol' (Obligatorio)
+ objEnUsuSisRol.Flg_Est : 'Estado del Registro'
+ objEnUsuSisRol.Fec_Ini : 'Fecha Inicio'
+ objEnUsuSisRol.Fec_Fin : 'Fecha Fin'
+ </param>
+	<param name="strFlag">
+ '1' Lista usuario y correos actualizados a la fecha de la intranet
+ '2' Concatena todos los correos de los usuarios
+ '3' Lista usuario y correos actualizados a la fecha de la extranet
+ </param>
+	<returns>Retorna la lista de la consulta de SGA2USUSISROL</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,199 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Consulta Pública de Expediente";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style type="text/css">
+        .cssDiv
+        {
+            border-radius: 4px;
+            box-shadow: 0 0 30px black;
+            width: 500px;
+            position: absolute;
+            top: 40px;
+            left: 100px;
+        }
+    </style>
+</head>
+@Scripts.Render("~/bundles/Reporte/VentanillaPublica")
+<body>
+    <style type="text/css">
+        th
+        {
+            background: #DAECF7;
+            vertical-align: top;
+            border-collapse: collapse;
+            padding: 0.3em;
+            caption-side: bottom;
+        }
+        
+        .control-label
+        {
+            text-align: inherit !important;
+            padding: 16px;
+        }
+    </style>
+    <div id="Modal_ConsultaExpe" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="cursor: pointer; background-color:@ViewBag.backgroundColor">
+                    <h4 class="modal-title">
+                      @*  <i class="fa fa-pencil"></i>Datos Generales del Expediente N°*@
+                       <span >Datos Generales del Expediente N°</span>
+                        <label id="lblCabeceraExpe">@ViewBag.idExpe</label>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form id='@("FrmModalDocumento")' class="form-horizontal">
+                    <div class="inline-container-Group">
+                        <div class="form-group" style="display: none">
+                            <div class="col-sm-2">
+                                <label style="font-family: Trebuchet MS; color: #595959;" class="control-label">
+                                    Administrado</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <label id="lblCabeceraPersonaNaturalJuridica" class="form-control" style="height: 100%" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2">
+                                <label style="font-family: Trebuchet MS; color: #595959" class="control-label">
+                                    Fec. Registro</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label id="lblCabeceraFec" class="form-control" style="height: 100%">
+                                @ViewBag.FecExpe
+                                </label>
+                            </div>
+                            <div class="col-sm-2" style="display: none">
+                                <label style="font-family: Trebuchet MS; color: #595959" class="control-label">
+                                    Tipo Documento</label>
+                            </div>
+                            <div class="col-sm-4" style="display: none">
+                                <label id="lblCabeceraTipDoc" class="form-control" style="height: 100%">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group" style="display: none">
+                            <div class="col-sm-2">
+                                <label style="font-family: Trebuchet MS; color: #595959" class="control-label">
+                                    Clasificación</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label id="lblCabeceraClasificacion" class="form-control" style="height: 100%" />
+                            </div>
+                            <div class="col-sm-2">
+                                <label style="font-family: Trebuchet MS; color: #595959" class="control-label">
+                                    N°. Documento</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label id="lblCabeceraNumDoc" class="form-control" style="height: 100%">
+                                </label>
+                            </div>
+                        </div>
+                        @if (ViewBag.idClasif == 1)
+                        {
+                            <div class="form-group" id="divTupaVentanilla">
+                            <div class="col-sm-2">
+                                <label style="font-family: Trebuchet MS; color: #595959; float: left" class="control-label">
+                                    Desc. Tupa</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <label id="lblCabeceraTupa" class="form-control" style="height: 100%">@ViewBag.DesAsunto</label>
+                            </div>
+                        </div>
+                        }
+                        else
+                        {
+                          <div class="form-group">
+                            <div class="col-sm-2">
+                                <label style="font-family: Trebuchet MS; color: #595959" class="control-label">
+                                    Asunto</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <label id="taCabeceraAsunto" class="form-control" style="height: 100%">@ViewBag.DesAsunto</label>
+                            </div>
+                        </div>
+                        }
+                        
+                        
+                        <div class="form-group" id="divAnexo" style="display: none">
+                            <div class="col-sm-2">
+                                <label id="lblAnexoVentanilla" style="font-family: Trebuchet MS; color: #595959;"
+                                    class="control-label">
+                                </label>
+                            </div>
+                            <div class="col-sm-10">
+                                <label id="tdAnexosRegExpe" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label id="lblLeyendaVentanilla" style="float: left; text-align: left; font-size: 10px;
+                                color: green; padding: 15px; display: none">
+                                <b>* Leyenda:</b>
+                                <br>
+                                <img src="../../Resource/img/attachment.png" title="Expediente anexado" />
+                                : Expediente anexado
+                            </label>
+                        </div>
+                    </div>
+                    <div class="inline-container-Group">
+                        <div class="x_title">
+                            <h3 class="panel-title">
+                                Situación del expediente</h3>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2">
+                                <label style="font-family: Trebuchet MS; color: #595959" class="control-label">
+                                    Fec. Consulta</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <label id="lblCabeceraFeChaVisto" class="form-control" style="height: 100%">
+                                @ViewBag.FecVisto
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2">
+                                <label style="font-family: Trebuchet MS; color: #595959" class="control-label">
+                                    Estado</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <label id="lblCabeceraEstado" class="form-control">@ViewBag.AbrEstado</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2">
+                                <label style="font-family: Trebuchet MS; color: #595959" class="control-label">
+                                    Ubicación actual</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <label id="lblCabeceraubicacion" class="form-control" style="height: 100%">@ViewBag.DesUbi</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div id="divButtonReturn" class="form-group" style="display: none">
+                        <div class="col-sm-12">
+                            <button id="btnRegresar" class="btn btn-dark nextBtn pull-right" title="Click aqui para regresar"
+                                type="button" style="margin-left: -10px; display: block;">
+                                <i class="fa fa-search"></i>Regresar
+                            </button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: none">
+        <input type="hidden" id="idHfConsCodTicket" value="@ViewBag.ticket" />
+        <input type="hidden" id="idHfConsCodForm" value="@ViewBag.codForm" />
+        <input type="hidden" id="hfidFecVisto" value="@ViewBag.FecVisto" />
+    </div>
+</body>
+</html>

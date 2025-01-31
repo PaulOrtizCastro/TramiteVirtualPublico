@@ -1,0 +1,44 @@
+﻿@using System.Configuration;
+@using System.Web.Optimization;
+@{
+    Layout = "~/Areas/Publico/Views/Shared/_LayoutCaptcha.cshtml";
+    ViewBag.Title = "Consulta de expediente";
+    ViewBag.TraerRutaAplicacion = "http://" + Request.Url.Host + ":" + Request.Url.Port + Request.ApplicationPath + "/"; 
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <script type="text/javascript">
+         var strRutaServidorMaster = '@String.Format("{0}://{1}:{2}", Request.Url.Scheme, Request.Url.Host, Request.Url.Port)';
+         var strRutaAplicacionMaster = strRutaServidorMaster + '@HttpContext.Current.Request.ApplicationPath' + "/";
+         var strRutaImagenesMaster = '@ConfigurationManager.AppSettings["IMAGENES_SERV"]';
+         //var strPaginaDefaultMasterRealizoEncuesta = "SeguridadInformacion/Index/EncuestaRealizada";
+
+         var strPaginaDefaultMasterPublico = "Publico/Ventanilla/consultaPublicaVentanilla";
+         var idExpeVirtual = @ViewBag.idExpe;
+        
+         $(document).ready(function ()
+         {
+            cargarContenidoEnDiv("divContenidoMaster", strRutaAplicacionMaster + strPaginaDefaultMasterPublico);
+         });
+    </script>
+    <style type="text/css">
+        .body
+        {
+            background-color: #cccccc !important;
+        }
+    </style>
+</head>
+<body class="body">
+    <div>
+        <input type="hidden" id="hfidExpe" value="@ViewBag.idExpe" />
+        <input type="hidden" id="hfidFecVisto" value="@ViewBag.FecVisto" />
+    </div>
+    <div>
+        <div id="divContenidoMaster" class="contenido">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿@model Mincetur.Administracion.AplGestionDoc.WebGestionDoc.Areas.Documento.Models.enMoviModel
+@using System.Configuration;
+@using System.Web.Optimization;
+@*@{
+    ViewBag.Title = "Gestión Documento Digital";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}*@
+<script type="text/javascript">
+    //Para cerrar un popover cuando otro se abre
+    $('body').on('show.bs.popover', function (e) {
+        $('button').not(e.target).popover('hide');
+        $('a').not(e.target).popover('hide');
+        $('i.buttonOpConfirm,i.btnAnularBorrador,i.btnPreaprobarBorrador').not(e.target).popover('hide');
+    });
+    var strRutaServidorMaster = '@string.Format("{0}://{1}:{2}", Request.Url.Scheme, Request.Url.Host, Request.Url.Port)';
+    var strRutaAplicacionMaster = strRutaServidorMaster + '@HttpContext.Current.Request.ApplicationPath' + "/";
+    //var strCodigoFuente = '@ConfigurationManager.AppSettings["CodigoFuente"]';
+    var strRutaArchivoAccionRol = '@ConfigurationManager.AppSettings["rutaArchivoAccionRol"]';
+    var strRutaImagenesMaster = "";
+    var strFlgEmbed = '@Request.QueryString["strFlgEmbed"]';
+    var strCallback = '@Request.QueryString["strCallback"]';
+    var strBandeja = '@Model.OPR_BANDEJA';
+    var strRolesMaster = '@Model.DES_ROLES';
+    var arrayRolesMaster = strRolesMaster.split(',');
+</script>
+<div id="divContenidoMaster" style="padding: 15px;">
+    @if (!string.IsNullOrEmpty(Model.OPR_BANDEJA) && Model.OPR_BANDEJA == "I")
+    {
+        @Html.Partial("consNuevoBandejaPrincipal") 
+    }
+    else
+    { 
+        @Html.Partial("consBandejaPrincipal")
+    }
+ @*@Html.Partial("consBandejaPrincipal", Model)*@   
+</div>
+<div style="display: none">
+</div>
+

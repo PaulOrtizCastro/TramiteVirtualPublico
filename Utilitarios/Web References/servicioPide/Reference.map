@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://svc.mincetur.gob.pe:8010/servicioIntegracion/DirectorioPersonaPide/soap/WCFIntegracionPide.svc?xsd=xsd0" filename="WCFIntegracionPide.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://svc.mincetur.gob.pe:8010/servicioIntegracion/DirectorioPersonaPide/soap/WCFIntegracionPide.svc?wsdl" filename="WCFIntegracionPide.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://svc.mincetur.gob.pe:8010/servicioIntegracion/DirectorioPersonaPide/soap/WCFIntegracionPide.svc?xsd=xsd1" filename="WCFIntegracionPide0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://svc.mincetur.gob.pe:8010/servicioIntegracion/DirectorioPersonaPide/soap/WCFIntegracionPide.svc?xsd=xsd2" filename="WCFIntegracionPide1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

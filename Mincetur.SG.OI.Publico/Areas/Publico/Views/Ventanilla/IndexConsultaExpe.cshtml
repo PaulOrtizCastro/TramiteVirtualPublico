@@ -1,0 +1,43 @@
+﻿@using System.Configuration;
+@using System.Web.Optimization;
+@{
+    //Layout = "~/Areas/Publico/Views/Shared/_LayoutVentanilla.cshtml";
+    Layout = "~/Areas/Publico/Views/Shared/_LayoutCaptcha.cshtml";
+    ViewBag.Title = "Consulta Pública de Expediente";
+    ViewBag.TraerRutaAplicacion = "http://" + Request.Url.Host + ":" + Request.Url.Port + Request.ApplicationPath + "/"; 
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>   
+    <script type="text/javascript">
+        var idExpeVirtual = "";
+        var idExpeQr = (@ViewBag.IdExpe!= "-1"? @ViewBag.IdExpe : "");
+        var strRutaServidorMaster = '@String.Format("{0}://{1}:{2}", Request.Url.Scheme, Request.Url.Host, Request.Url.Port)';
+        var strRutaAplicacionMaster = strRutaServidorMaster + '@HttpContext.Current.Request.ApplicationPath' + "/";
+        var strRutaImagenesMaster = '@ConfigurationManager.AppSettings["IMAGENES_SERV"]';
+
+        var strPaginaDefaultMasterPublicoPorExpe = "Publico/Ventanilla/consultaPublicaExpediente?ticket=" + (idExpeQr != "" ? idExpeQr : "");
+
+        $(document).ready(function () {
+            cargarContenidoEnDiv("divContenidoMaster", strRutaAplicacionMaster + strPaginaDefaultMasterPublicoPorExpe);
+        });
+
+    </script>
+    <style type="text/css">
+        .body
+        {
+            background-color: #cccccc !important;
+        }
+    </style>
+</head>
+<body class="">
+    <div>
+        <div id="divContenidoMaster" class="contenido">
+        </div>
+    </div>
+    <div style="display: none">
+        <input type="hidden" id="hfCodForm" value="CE" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.ServicioWebDocCms.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.ServicioWebDocCms.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="DocCmsDescarga">
+    <xs:sequence>
+      <xs:element name="IdDocCms" type="xs:int" />
+      <xs:element minOccurs="0" name="Dato" nillable="true" type="xs:string" />
+      <xs:element name="IdUsu" type="xs:int" />
+      <xs:element name="IdSis" type="xs:int" />
+      <xs:element minOccurs="0" name="IpAcceso" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocCmsDescarga" nillable="true" type="tns:DocCmsDescarga" />
+  <xs:complexType name="ResultadoDocCms">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Resultado">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DocCms" nillable="true" type="tns:DocCms" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultadoDocCms" nillable="true" type="tns:ResultadoDocCms" />
+  <xs:complexType name="Resultado">
+    <xs:sequence>
+      <xs:element name="IdTipo" type="xs:int" />
+      <xs:element minOccurs="0" name="DesError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Resultado" nillable="true" type="tns:Resultado" />
+  <xs:complexType name="DocCms">
+    <xs:sequence>
+      <xs:element name="IdDocCms" type="xs:long" />
+      <xs:element name="IdSis" type="xs:int" />
+      <xs:element minOccurs="0" name="DesNom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesNomAbr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesExtension" nillable="true" type="xs:string" />
+      <xs:element name="IdTipoDocu" type="xs:int" />
+      <xs:element name="NumSizeArchivo" type="xs:int" />
+      <xs:element minOccurs="0" name="DesRuta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Archivo" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ArchivoBase64" nillable="true" type="xs:base64Binary" />
+      <xs:element name="FecDocCms" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CodPin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodCms" nillable="true" type="xs:string" />
+      <xs:element name="IdDoc" type="xs:int" />
+      <xs:element name="IdUsu" type="xs:int" />
+      <xs:element minOccurs="0" name="IpAcceso" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocCms" nillable="true" type="tns:DocCms" />
+</xs:schema>

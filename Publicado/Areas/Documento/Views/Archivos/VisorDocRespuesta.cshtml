@@ -1,0 +1,14 @@
+﻿@{
+    Layout = null;
+    var intIdDocCms = (ViewBag.IdDocCms != null ? ViewBag.IdDocCms : 0);
+}
+<script type="text/javascript">
+
+</script>
+<div id="divVisorResolucionFirmada">
+    @if (@intIdDocCms > 0)
+    {
+        var strIdDocCms = ViewBag.IdDocCms; 
+        <embed src="@Url.Content("~/Documento/Archivos/descargarArchivo?IdDocCms=")@strIdDocCms" type="application/pdf" width="100%" height="600"></embed>  
+    }
+</div>

@@ -1,0 +1,163 @@
+﻿@{
+    ViewBag.Title = "Gestión Documento Digital";   
+}
+@using System.Web.Optimization
+@model Mincetur.Administracion.AplGestionDoc.WebGestionDoc.Areas.Documento.Models.enMoviModel
+@*@if (Model.ID_RESPONSABLE == "1")
+{
+    *@
+<div class="panel-body">
+    @if (Model.enEstado.ID_ESTADO == 1)
+    {
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <div class="alert alert-danger">
+                    <i class="fa fa-info-circle"></i>&nbsp;<strong>Atención!</strong> --- <b>Documento Electrónico
+                        Archivado.</b> ---
+                </div>
+            </div>
+        </div>
+    }
+    else if (Model.enEstado.ID_ESTADO == 3)
+    {
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <div class="alert alert-warning">
+                    <i class="fa fa-info-circle"></i>&nbsp;<strong>Atención!</strong> --- <b>Documento Electrónico
+                        Derivado.</b> ---
+                </div>
+            </div>
+        </div>
+    }
+
+    else if (Model.enEstado.ID_ESTADO == 9)
+    {
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <div class="alert alert-danger">
+                    <i class="fa fa-info-circle"></i>&nbsp;<strong>Atención!</strong> --- <b>Documento Electrónico
+                        Anulado.</b> ---
+                </div>
+            </div>
+        </div>                
+    }
+    else
+    {                 
+        <div class="form-group row">
+            <div class="col-sm-8">
+                <a href="javascript:void(0)" id="consBanGesDoc_Derivar"><i class="fa fa-list"></i>&nbsp;Derivar</a>&nbsp;
+                <a href="javascript:void(0)" id="consBanGesDoc_Asignar"><i class="fa fa-users"></i>&nbsp;Asignar</a>&nbsp;
+                <a href="javascript:void(0)" id="consBanGesDoc_Archivar"><i class="fa fa-briefcase"></i>&nbsp;Archivar</a>&nbsp;
+                <a href="javascript:void(0)" id="consBanGesDoc_Gestion"><i class="fa fa-file"></i>&nbsp;Nuevo Borrador</a>
+            </div>
+        </div>                
+    }
+    @if (Model.enEstado.ID_ESTADO != 9)
+    { 
+        <div class="panel panel-default">
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <div class="col-sm-2">
+                        @Html.LabelFor(model => model.ID_EXPE, new { @for = "ID_EXPE", @style = "font-weight:bold" })
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="@Model.DES_URL_EXPE" target="_blank" style="cursor:pointer" >
+                            <label for="ID_EXPE" style="color: Blue; cursor: pointer">
+                                @Model.ID_EXPE
+                            </label>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        @Html.LabelFor(model => model.FEC_EXPE, new { @for = "FEC_EXPE", @style = "font-weight:bold" })
+                    </div>
+                    <div class="col-sm-4">
+                        @Model.FEC_EXPE
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <div class="col-sm-2">
+                        @Html.LabelFor(model => model.enTipDoc.DES_DOC, new { @for = "DES_DOC", @style = "font-weight:bold" })
+                    </div>
+                    <div class="col-sm-7">
+                        @*@Model.enDoc.DES_DOC N° @Model.enDoc.NUM_DOC*@ @*<label id="consBanGesDoc_idTipoDoc" ></label>*@
+                        @Model.enDoc.DES_DOC_COMPLETO
+                    </div>
+                    <div class="col-sm-3">
+                       @* <a href="" id="consBanGesDoc_verDocumento" style="cursor: pointer; vertical-align: middle"
+                            class="control-label"><i class="fa fa-search" title="Ver Documento Digital"></i>
+                            Ver Documento Digital </a>*@
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <div class="col-sm-2">
+                        @Html.LabelFor(model => model.DES_ASUNTO, new { @for = "DES_ASUNTO", @style = "font-weight:bold" })
+                    </div>
+                    <div class="col-sm-10">
+                        @Model.enDoc.DES_OBS
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <div class="col-sm-2">
+                        <label style="font-weight: bold">
+                        </label>
+                    </div>
+                    <div class="col-sm-10">
+                    </div>
+                </div>
+            </div>
+            <div id="consBanGesDoc_divAdjuntosPivot" class="form-group row" style="display: none">
+                <div class="col-sm-12">
+                    <div class="col-sm-2">
+                        <label style="font-weight: bold">
+                            Adjuntos:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div id="consBanGesDoc_divAdjuntos" class="jqGridDocs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="consBanGesDoc_divAsignacionesPivot" class="form-group row" style="display: none">
+                <div class="col-sm-12">
+                    <div id="consBanGesDoc_divAsignaciones" class="jqGridDocs">
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<div id="consBanGesDoc_DivOculto">
+    <input type="hidden" id="consBanGesDoc_idExpe" value= "@Model.ID_EXPE" />
+    <input type="hidden" id="consBanGesDoc_idMovi" value= "@Model.ID_MOVI" />
+    <input type="hidden" id="consBanGesDoc_idTipDoc" value= "@Model.enTipDoc.ID_TIP_DOC" />
+    <input type="hidden" id="consBanGesDoc_idSubRemite" value= "@Model.enEstorgRemite.ID_SUB" />
+    <input type="hidden" id="consBanGesDoc_idSubOfiRemite" value= "@Model.enEstorgRemite.ID_SUBOFI" />
+    <input type="hidden" id="consBanGesDoc_idDoc" value= "@Model.enDoc.ID_DOC" />
+    <input type="hidden" id="consBanGesDoc_idPersona" value= "@Model.enPersona.ID_PERSONA" />
+    <label id="consBanGesDoc_lblidPersona" style="display: none">
+        @Model.enPersona.ID_PERSONA
+    </label>
+    <input type="hidden" id="consBanGesDoc_CodCms" value="" />
+    <input type="hidden" id="consBanGesDoc_IdDocCms" value="" />
+    <input type="hidden" id="consBanGesDoc_idEstado" value= "@Model.enEstado.ID_ESTADO" />
+    @*<input type="hidden" id="consBanGesDoc_DesGestion" value= "@Model.DES_URL_GESTION" />*@
+</div>
+@Scripts.Render("~/dist/src/app.Consulta.consDocPublico.chunk")
+@*}
+else
+{ 
+    <div class="form-group row">
+        <div class="col-sm-12">
+            <div class="alert alert-danger" style="text-align: center">
+                <i class="fa fa-info-circle"></i>&nbsp;<strong>Atención!</strong> --- <b>Sin acceso
+                    al Documento Digital.</b> ---
+            </div>
+        </div>
+    </div>
+}*@ 

@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Mincetur.Administracion.AplTramiteVirtualPublico.Utilitarios.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Utilitarios_servicioSeguridad_WCFSeguridadEncripDesencrip_WCFSeguridadEncripDesencrip" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadEncripDesencrip.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_soap_ServicioArchivoLaserfiche_WCFEIArchivoLF" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/SoapLaserfiche/WCFEIArchivoLF.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_soap_ServicioGeneralUtil_Estorg_WCFGeneralesEstorg" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesEstorg.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_soap_ServicioSeguridad_SeguridadSistema_WCFSeguridadSistema" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadSistema.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_ServicioSunatContribuyente_wsContribuyente" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/wsSunat/sistema/ws/wsContribuyente.asmx</Value>
+    </Setting>
+    <Setting Name="Utilitarios_servicioGeneralesTipoDocu_WCFGeneralesTipoDocu" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesTipoDocu.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_servicioGeneralesTipoTele_WCFGeneralesTipoTele" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesTipoTele.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_servicioGeneralesUbigeo_WCFGeneralesUbigeo" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesUbigeo.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_servicioGeneralesVia_WCFGeneralesVia" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesVia.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_servicioGeneralesZona_WCFGeneralesZona" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesZona.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_servicioDocumento_WCFGeneralDocIdentidad" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesDocIdentidad.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_servicioPide_WCFIntegracionPide" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioIntegracion/DirectorioPersonaPide/soap/WCFIntegracionPide.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_soap_ServicioGeneralUtil_Correo_WCFGeneralesCorreo" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesCorreo.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_soap_Servicio_Correo_WCFBorradorElectIntegracionEnviar" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/ServicioBorradorDig/Integracion/Services/WCFBorradorElectIntegracionEnviar.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_soap_servicioGestorSeguridadLogError_WCFSeguridadLog" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioSeguridad/WCFSeguridadLog.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_servicioGenerales_DocCmsConsulta_WCFGeneralesDocCmsConsulta" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioGenerales/docCms/Services/WCFGeneralesDocCmsConsulta.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_servicioGestorFileServer_WCFgestorFileServer" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioFileServer/WCFgestorFileServer.svc</Value>
+    </Setting>
+    <Setting Name="Utilitarios_soap_ServicioUsuSisRolEntEstorg_WCFSeguridadUsuSisRolEntEstorg" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://svc.mincetur.gob.pe:8010/servicioSeguridad/services/WCFSeguridadUsuSisRolEntEstorg.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

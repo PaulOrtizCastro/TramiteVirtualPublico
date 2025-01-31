@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.EnGeneralesUtil" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.EnGeneralesUtil" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="enUbigeoDepa">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DES_DEPA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FLG_EST" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_DDN" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_UBI_DEPA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OPR" type="xs:int" />
+      <xs:element minOccurs="0" name="USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="USU_MODI" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="enUbigeoDepa" nillable="true" type="tns:enUbigeoDepa" />
+  <xs:complexType name="ArrayOfenUbigeoDepa">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="enUbigeoDepa" nillable="true" type="tns:enUbigeoDepa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfenUbigeoDepa" nillable="true" type="tns:ArrayOfenUbigeoDepa" />
+  <xs:complexType name="enUbigeoProv">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DES_PROV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FLG_EST" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_UBI_DEPA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_UBI_PROV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OPR" type="xs:int" />
+      <xs:element minOccurs="0" name="USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="USU_MODI" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="enUbigeoProv" nillable="true" type="tns:enUbigeoProv" />
+  <xs:complexType name="ArrayOfenUbigeoProv">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="enUbigeoProv" nillable="true" type="tns:enUbigeoProv" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfenUbigeoProv" nillable="true" type="tns:ArrayOfenUbigeoProv" />
+  <xs:complexType name="enUbigeo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COD_UBIGEO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DES_DEPA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DES_DIST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DES_PROV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FEC_FIN" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FEC_INI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FLG_EST" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_UBIGEO" type="xs:int" />
+      <xs:element minOccurs="0" name="NUM_NIVEL" type="xs:int" />
+      <xs:element minOccurs="0" name="OPR" type="xs:int" />
+      <xs:element minOccurs="0" name="USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="USU_MODI" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="enUbigeo" nillable="true" type="tns:enUbigeo" />
+  <xs:complexType name="ArrayOfenUbigeo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="enUbigeo" nillable="true" type="tns:enUbigeo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfenUbigeo" nillable="true" type="tns:ArrayOfenUbigeo" />
+</xs:schema>

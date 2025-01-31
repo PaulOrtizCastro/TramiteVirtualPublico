@@ -1,0 +1,400 @@
+﻿/*Añadidos por andres*/
+.activo
+{
+	color: #000000;
+	background-color: #DDDDDD;
+	cursor: pointer;
+	font-weight: bold;
+	}
+
+.inActivo
+{
+	color: #CCCCCC;
+	background-color: #EEEEEE;
+	}
+
+.errorControl
+{
+	background-color: #FFEEEC;
+	color: Red;
+	border: 1px solid #f00;
+}
+
+.errorControl td
+{
+	border-right: 1px solid #f00;
+	border-bottom: 1px solid #f00;
+	border-top: 1px solid #f00;
+	}
+.campoObligatorio
+{
+	color: Red;
+	font-weight: bold;
+	padding-left: 5px;
+	font-size: 12px;
+}
+ul {
+ margin-left: 0;
+ padding-left: 0;
+ border: none;
+ font-weight:bold;
+ }
+ul li 
+{
+background-repeat: no-repeat;
+margin-left: 0;
+padding: 3px 5px 3px 20px;
+border: none;
+list-style-type: none;
+vertical-align: middle;
+font-weight: normal;
+}
+
+.busquedaAvanzada
+{
+	display:none
+	}
+.imagenBoton
+{
+cursor: pointer;
+white-space: nowrap;
+}
+
+.default
+{
+cursor: pointer;
+}
+
+.text_box_disabled{
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    /*background-color: #ddd;*/
+    background-color: ThreeDFace;
+    color: #333;
+    text-align:left;
+    border: 1px solid #999;
+    cursor: inherit;
+    -moz-user-focus: ignore;
+    }
+    
+.campoResaltado
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #336699;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.oculto
+{
+	display:none;
+}
+
+.numerica
+{
+	text-align: right;
+	padding-right: 3px;
+	background-color: #F4F9FD;
+}
+.decimal
+{
+ text-align:right;    
+}
+.formularioModal
+{
+font-size:11px;
+	}
+.enEspera
+{
+	background-color:white;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+	}
+.formularioContenido
+{
+font-size:11px;
+	}
+.ayudasCursivas
+{
+font-size:11px;
+font-style:italic;
+color: Gray;
+}
+
+.ui-jqgrid tr.jqgrow td {
+    white-space: normal;
+}
+
+label
+{
+	font-weight: bold;
+	color: Black;
+	}
+
+.campoDatos
+{
+	font-weight: bold;
+	color: Black;
+	}
+	
+.grid
+{
+	font-size:11px;
+	overflow: visible;
+	table-layout: auto;
+}
+.siguiente
+{
+	width: 17px;
+	height: 16px;
+	background-image: url('http://172.16.0.192/css/intra/imagenes/siguiente.png');
+	display: inline-block;
+	background-position:  0px 0px;
+	border: 0px none #000000
+}
+.anterior
+{
+	width: 17px;
+	height: 16px;
+	background-image: url('http://172.16.0.192/css/intra/imagenes/anterior.png');
+	display: inline-block;
+	background-position:  0px 0px;
+	border: 0px none #000000
+}
+.inicio
+{
+	width: 17px;
+	height: 16px;
+	background-image: url('http://172.16.0.192/css/intra/imagenes/inicio.png');
+	display: inline-block;
+	background-position:  0px 0px;
+	border: 0px none #000000
+}
+.fin
+{
+	width: 17px;
+	height: 16px;
+	background-image: url('http://172.16.0.192/css/intra/imagenes/fin.png');
+	display: inline-block;
+	background-position:  0px 0px;
+	border: 0px none #000000
+}
+.paginaActual
+{
+	width: 30px;
+	font-size: 10px;
+	}
+.irPagina
+{
+	width: 17px;
+	height: 16px;
+	background-image: url('http://172.16.0.192/css/intra/imagenes/ir.png');
+	display: inline-block;
+	background-position:  0px 0px;
+	border: 0px none #000000
+	}
+.desc
+{
+    background-image: url('http://localhost:4787/tramite/resource/img/desc.png');
+    background-position:right;
+    display: block;
+    background-repeat:no-repeat;
+    cursor: pointer;
+}
+.asc
+{
+    background-image: url('http://localhost:4787/tramite/resource/img/asc.png');
+    background-position:right;
+    display: table-cell;
+    background-repeat:no-repeat;
+    cursor: pointer;
+}
+
+.grid_header_resaltado
+{
+	background-color: #336699;
+	display: table-cell;
+	/*border: 1px solid #0099CC;*/
+}
+h3
+{
+	font-size: 11px;
+	}
+
+textarea
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color:#000000;
+    text-align:left;
+	}
+table 
+{
+      font-size: 12px;
+      border-collapse: collapse;
+}
+.tablaConBorde td
+{
+      border: 1px solid black;
+}
+.contador
+{
+width: 90%
+	}
+
+.legendAlterno
+{
+	border-style: none;
+	background-color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Calibri;
+	color: #000000;
+}
+
+.soloFecha
+{
+	width: 70px;
+	vertical-align: middle;
+}
+
+.grid_cell_resaltado
+{
+	background-color: #5991C8;
+	color: Black;
+}
+
+.grid_cell_resaltado_alt
+{
+    background-color: #B7C8E1;
+    color: Black;
+}
+.grid_footer
+{
+    background-color: #F3EAC2;
+    color: Black;
+    font-weight: bold;
+}
+.anuladoTenue
+{
+    color: Red;
+    }   
+.panel-left1{
+    float: left;
+    width: 600px;
+    min-height: 520px;
+
+}
+.panel-left2{
+    float: left;
+    width: 500px;
+    min-height: 520px;
+}
+
+.tablasRegistro
+{
+    width: 100%;
+    
+}
+        
+.tablasRegistro td
+{
+    padding: 5px 5px 5px 5px;
+}
+
+.tituloTabla
+{
+    font-family: Calibri;
+    font-size: 16px;
+    font-weight: bold;
+    color: #336699;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    text-indent: 30px;
+}
+
+.exclamacion
+{
+    background-image: url('~/Resourceimg/warning.png');
+    text-indent: 30px;
+    background-repeat: no-repeat;
+    font-style: italic;
+    color: #008000;
+}
+.viewer
+{
+    transform: scale(1);
+}
+
+.lineasGrillaSuave
+{
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+    table-layout: auto;
+    }
+.custom-combobox {
+position: relative;
+display: inline-block;
+}
+.custom-combobox-toggle {
+position: absolute;
+top: 0;
+bottom: 0;
+margin-left: -1px;
+padding: 0;
+}
+.custom-combobox-input {
+margin: 0;
+padding: 5px 10px;
+}
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modalProceso {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                /*url('http://172.16.0.192/css/intra/imagenes/loader.gif') */
+                50% 50% 
+                no-repeat;
+}
+
+.background_color {
+    color: #000000;
+	background-color: #DDDDDD;
+	cursor: pointer;
+	font-weight: bold;
+}
+.red_error{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	height:20px;
+	line-height:20px;
+    font-size: 12px;
+    color:#E43A32;
+    text-align:justify;
+	padding-left:25px;
+}
+
+.gridTable 
+{
+    width: 100%;
+    border-collapse: collapse;   
+    }
+    
+.gridTable td
+{
+    border-top: 1px solid #CCCCCC;
+    border-left: 0px solid #CCCCCC;
+    border-right: 0px solid #CCCCCC;
+    border-bottom: 0px solid #CCCCCC;
+    padding: 3px 3px 3px 3px; 
+}

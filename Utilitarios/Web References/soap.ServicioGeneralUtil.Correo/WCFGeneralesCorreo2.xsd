@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.EnSeguridad" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.EnSeguridad" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesCorreo.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.CoSeguridad" />
+  <xs:complexType name="enLogError">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.CoSeguridad" base="q1:coHBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="COD_FUENTE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DES_ERROR" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DES_PAGINAOBJETO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FEC_CREA" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ID_LOGERROR" type="xs:int" />
+          <xs:element minOccurs="0" name="ID_SIS" type="xs:int" />
+          <xs:element minOccurs="0" name="IP_CREA" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="USU_CREA" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="enLogError" nillable="true" type="tns:enLogError" />
+</xs:schema>

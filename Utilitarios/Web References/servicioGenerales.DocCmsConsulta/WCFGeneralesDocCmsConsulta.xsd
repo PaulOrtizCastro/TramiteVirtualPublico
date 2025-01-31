@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://svc.mincetur.gob.pe:8010/servicioGenerales/docCms/Services/WCFGeneralesDocCmsConsulta.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.ServicioWebDocCms.Models" />
+  <xs:element name="descarga">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.ServicioWebDocCms.Models" minOccurs="0" name="model" nillable="true" type="q1:DocCmsDescarga" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="descargaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.ServicioWebDocCms.Models" minOccurs="0" name="descargaResult" nillable="true" type="q2:ResultadoDocCms" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

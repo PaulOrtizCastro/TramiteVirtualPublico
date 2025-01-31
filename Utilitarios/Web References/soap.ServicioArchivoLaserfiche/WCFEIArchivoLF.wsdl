@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WCFEIArchivoLF" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://svc.mincetur.gob.pe:8010/SoapLaserfiche/WCFEIArchivoLF.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://svc.mincetur.gob.pe:8010/SoapLaserfiche/WCFEIArchivoLF.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://svc.mincetur.gob.pe:8010/SoapLaserfiche/WCFEIArchivoLF.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Mincetur.SG.OI.SoapLaserFiche" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWCFEIArchivoLF_DescargarArchivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DescargarArchivo" />
+  </wsdl:message>
+  <wsdl:message name="IWCFEIArchivoLF_DescargarArchivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DescargarArchivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFEIArchivoLF_ExportarArchivoByte_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExportarArchivoByte" />
+  </wsdl:message>
+  <wsdl:message name="IWCFEIArchivoLF_ExportarArchivoByte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExportarArchivoByteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFEIArchivoLF_SubirArchivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubirArchivo" />
+  </wsdl:message>
+  <wsdl:message name="IWCFEIArchivoLF_SubirArchivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubirArchivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFEIArchivoLF_SubirArchivoMasivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubirArchivoMasivo" />
+  </wsdl:message>
+  <wsdl:message name="IWCFEIArchivoLF_SubirArchivoMasivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubirArchivoMasivoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWCFEIArchivoLF">
+    <wsdl:operation name="DescargarArchivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFEIArchivoLF/DescargarArchivo" message="tns:IWCFEIArchivoLF_DescargarArchivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFEIArchivoLF/DescargarArchivoResponse" message="tns:IWCFEIArchivoLF_DescargarArchivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportarArchivoByte">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFEIArchivoLF/ExportarArchivoByte" message="tns:IWCFEIArchivoLF_ExportarArchivoByte_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFEIArchivoLF/ExportarArchivoByteResponse" message="tns:IWCFEIArchivoLF_ExportarArchivoByte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubirArchivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFEIArchivoLF/SubirArchivo" message="tns:IWCFEIArchivoLF_SubirArchivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFEIArchivoLF/SubirArchivoResponse" message="tns:IWCFEIArchivoLF_SubirArchivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubirArchivoMasivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFEIArchivoLF/SubirArchivoMasivo" message="tns:IWCFEIArchivoLF_SubirArchivoMasivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFEIArchivoLF/SubirArchivoMasivoResponse" message="tns:IWCFEIArchivoLF_SubirArchivoMasivo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWCFEIArchivoLF" type="tns:IWCFEIArchivoLF">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DescargarArchivo">
+      <soap:operation soapAction="http://tempuri.org/IWCFEIArchivoLF/DescargarArchivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportarArchivoByte">
+      <soap:operation soapAction="http://tempuri.org/IWCFEIArchivoLF/ExportarArchivoByte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubirArchivo">
+      <soap:operation soapAction="http://tempuri.org/IWCFEIArchivoLF/SubirArchivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubirArchivoMasivo">
+      <soap:operation soapAction="http://tempuri.org/IWCFEIArchivoLF/SubirArchivoMasivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WCFEIArchivoLF">
+    <wsdl:port name="BasicHttpBinding_IWCFEIArchivoLF" binding="tns:BasicHttpBinding_IWCFEIArchivoLF">
+      <soap:address location="http://svc.mincetur.gob.pe:8010/SoapLaserfiche/WCFEIArchivoLF.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

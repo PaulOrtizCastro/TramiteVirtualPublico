@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.EnGeneralesUtil" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.EnGeneralesUtil" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesCorreo.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.EnSeguridad" />
+  <xs:import schemaLocation="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesCorreo.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://svc.mincetur.gob.pe:8010/servicioGeneralUtil/WCFGeneralesCorreo.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.CoGeneralesUtil" />
+  <xs:complexType name="enEmail">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.CoGeneralesUtil" base="q1:coHBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ASUNTO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DES_SIS" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FLAG_IMAGEN" type="xs:int" />
+          <xs:element minOccurs="0" name="ID_SIS" type="xs:int" />
+          <xs:element minOccurs="0" name="ID_USU" type="xs:int" />
+          <xs:element minOccurs="0" name="MAIL_DESTINO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MAIL_ENVIA" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MENSAJE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NOMBRE_DESTINO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NOMBRE_ENVIA" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OFICINA_DESTINO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OFICINA_ENVIA" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OPR_LINK" type="xs:int" />
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.Seguridad.EnSeguridad" minOccurs="0" name="enLogError" nillable="true" type="q2:enLogError" />
+          <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstCorreo" nillable="true" type="q3:ArrayOfstring" />
+          <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstCorreoCC" nillable="true" type="q4:ArrayOfstring" />
+          <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstCorreoCCO" nillable="true" type="q5:ArrayOfstring" />
+          <xs:element minOccurs="0" name="lstEnDocumento" nillable="true" type="tns:ArrayOfenDocumento" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="enEmail" nillable="true" type="tns:enEmail" />
+  <xs:complexType name="ArrayOfenDocumento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="enDocumento" nillable="true" type="tns:enDocumento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfenDocumento" nillable="true" type="tns:ArrayOfenDocumento" />
+  <xs:complexType name="enDocumento">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:enTipoDocu">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ARCHIVO" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="DES_NOM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FEC_CREA" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FEC_MODI" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ID_DOC" type="xs:int" />
+          <xs:element minOccurs="0" name="ID_FORM" type="xs:int" />
+          <xs:element minOccurs="0" name="ID_SIS" type="xs:int" />
+          <xs:element minOccurs="0" name="NUM_SIZEARCHIVO" type="xs:int" />
+          <xs:element minOccurs="0" name="TEXTO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="USU_CREA" type="xs:int" />
+          <xs:element minOccurs="0" name="USU_MODI" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="enDocumento" nillable="true" type="tns:enDocumento" />
+  <xs:complexType name="enTipoDocu">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Mincetur.Administracion.GeneralesUtil.CoGeneralesUtil" base="q6:coHBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ABR_EXTENSION" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DES_EXTENSION" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DES_RUTA" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FEC_CREA" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FLG_EST" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID_TIPO" type="xs:int" />
+          <xs:element minOccurs="0" name="OPR" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="USU_CREA" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="enTipoDocu" nillable="true" type="tns:enTipoDocu" />
+</xs:schema>

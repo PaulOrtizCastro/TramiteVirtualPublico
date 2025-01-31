@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\compilados\gestionDocumento</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/Documento/Views/Archivos/mensajeDocumento.cshtml">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Areas/Documento/Views/Archivos/verDocumentoElectronico.cshtml">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Areas/Documento/Views/Archivos/VisorDocRespuesta.cshtml">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Areas/Documento/Views/Gestion/archivarExpediente.cshtml">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Areas/Documento/Views/Gestion/asignarExpediente.cshtml">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Areas/Documento/Views/Gestion/consBandejaPrincipal.cshtml">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Areas/Documento/Views/Gestion/consDoc.cshtml">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Areas/Documento/Views/Gestion/consNuevoBandejaPrincipal.cshtml">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Areas/Documento/Views/Gestion/derivarExpediente.cshtml">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Areas/Documento/Views/Gestion/mensaje.cshtml">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Areas/Documento/Views/Web.config">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Areas/Documento/Views/_ViewStart.cshtml">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/CoGeneralesUtil.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/CoSeguridad.dll">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="bin/CoTramiteDocumentario.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/CoTramiteVirtualPublico.dll">
+      <publishTime>11/29/2023 11:25:26</publishTime>
+    </File>
+    <File Include="bin/CoTramiteVirtualPublico.pdb">
+      <publishTime>11/29/2023 11:25:26</publishTime>
+    </File>
+    <File Include="bin/DaSeguridad.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/DaTramiteDocumentario.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/DaTramiteVirtualPublico.dll">
+      <publishTime>08/13/2024 09:00:59</publishTime>
+    </File>
+    <File Include="bin/DaTramiteVirtualPublico.pdb">
+      <publishTime>08/13/2024 09:00:59</publishTime>
+    </File>
+    <File Include="bin/EnGeneralesUtil.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/EnSeguridad.dll">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="bin/EnTramiteDocumentario.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/EnTramiteVirtualPublico.dll">
+      <publishTime>08/13/2024 08:08:40</publishTime>
+    </File>
+    <File Include="bin/EnTramiteVirtualPublico.pdb">
+      <publishTime>08/13/2024 08:08:40</publishTime>
+    </File>
+    <File Include="bin/es/System.Net.Http.Formatting.resources.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/es/System.Net.Http.resources.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/es/System.Net.Http.WebRequest.resources.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Helpers.resources.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Http.resources.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Http.WebHost.resources.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Mvc.resources.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Razor.resources.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.resources.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="bin/itextsharp.xmlworker.dll">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/NeSeguridad.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/NeTramiteDocumentario.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/NeTramiteVirtualPublico.dll">
+      <publishTime>08/13/2024 09:01:00</publishTime>
+    </File>
+    <File Include="bin/NeTramiteVirtualPublico.pdb">
+      <publishTime>08/13/2024 09:01:00</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="bin/Oracle.DataAccess.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/resource/clases/customDateConvertor.cs">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/29/2023 10:26:51</publishTime>
+    </File>
+    <File Include="bin/Utilitarios.dll">
+      <publishTime>08/13/2024 08:08:40</publishTime>
+    </File>
+    <File Include="bin/Utilitarios.dll.config">
+      <publishTime>02/09/2024 16:24:17</publishTime>
+    </File>
+    <File Include="bin/Utilitarios.pdb">
+      <publishTime>08/13/2024 08:08:40</publishTime>
+    </File>
+    <File Include="bin/Utilitarios.XmlSerializers.dll">
+      <publishTime>08/13/2024 08:08:41</publishTime>
+    </File>
+    <File Include="bin/WebGestionDoc.dll">
+      <publishTime>08/13/2024 09:01:00</publishTime>
+    </File>
+    <File Include="bin/WebGestionDoc.pdb">
+      <publishTime>08/13/2024 09:01:00</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/bootstrap/bootstrap.custom.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/bootstrap/bootstrap.min.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/custom.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/datetimepicker/bootstrap-datetimepicker.min.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/font-awesome/all.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/font-awesome/font-awesome.custom.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/font-awesome/font-awesome.min.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/jqgrid/ui.jqgrid-bootstrap.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/jqgrid/ui.jqgrid.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/metisMenu/metisMenu.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/pnotify/pnotify.custom.min.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/sb-admin-2.min.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/select2/select2.min.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/css/summernote/summernote.css">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/fonts/font-awesome/fontawesome-webfont.svg">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/fonts/glyphicons/glyphicons-halflings-regular.svg">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/img/ajax-loader.gif">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/img/cabecera.png">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/img/favicon.png">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/img/Logotipo_MINCETUR.JPG">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/img/LogOut.png">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/img/logo_marca_peru_rojo.png">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/js/blockui/jquery.blockUI.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/bootbox/bootbox.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/bootstrap/bootstrap-confirmation.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/bootstrap/bootstrap-filestyle.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/bootstrap/bootstrap-typeahead-4.0.2.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/bootstrap/bootstrap.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/datetimepicker/bootstrap-datetimepicker.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/datetimepicker/moment-with-locales.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/jqgrid/i18n/grid.locale-es.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/jqgrid/jquery.jqGrid.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/jqgrid/JSLINQ.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/jquery/jquery-2.1.0.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/jquery/jquery-migrate-1.0.0.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/jquery/jquery-ui-1.8.24.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/jquery/jquery.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/jqueryval/jquery.validate.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/jqueryval/jquery.validate.unobtrusive.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/lib/application.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/lib/utilitarios.custom.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/lib/validaciones.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/metisMenu/metisMenu.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/pnotify/pnotify.custom.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/popover/popper.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/popover/popper.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/popover/tooltip.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/popover/tooltip.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/sb-admin-2.js">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="resource/js/select2/select2.min.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/src/Publico/consDocPublico.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/src/Publico/regArchivarDocPublico.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/src/Publico/regAsignarDocPublico.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/src/Publico/regDerivarDocPublico.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/summernote/summernote.js">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="resource/js/system.conf.js">
+      <publishTime>11/29/2023 10:26:52</publishTime>
+    </File>
+    <File Include="Views/Index/Main.cshtml">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="Views/Index/_PrincipalPartial.cshtml">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="Views/Index/_ResumenPartial.cshtml">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="Views/Shared/Layout.cshtml">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>11/29/2023 10:26:53</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/13/2024 08:08:42</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
